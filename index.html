@@ -355,6 +355,12 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
 .reforma-band p{color:var(--muted);max-width:58ch}
 @media (max-width:640px){#sobre .pilares{grid-template-columns:1fr}.reforma-band{padding:28px}}
 
+
+/* etiqueta de preço */
+.preco-tag{font-family:var(--display);font-weight:800;font-size:20px;color:var(--text)}
+.preco-tag span{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted);margin-bottom:2px}
+.preco-tag em{font-style:normal;background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
+
 /* responsive */
 @media (max-width:960px){
   .hero-grid,.split,.rev-grid,.contact-grid,.lite-hero{grid-template-columns:1fr;gap:44px}
@@ -423,6 +429,8 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       "logo": "https://magesistemas.com.br/img/logo.png",
       "telephone": "+55-61-99413-8978",
       "taxID": "23.127.266/0001-03",
+      "foundingDate": "2015",
+      "address": {"@type": "PostalAddress", "addressLocality": "Águas Lindas de Goiás", "addressRegion": "GO", "addressCountry": "BR"},
       "sameAs": [
         "https://www.instagram.com/magesistemas",
         "https://www.facebook.com/magesistemas"
@@ -432,6 +440,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Qual a diferença entre o Mage Lite, o Mage ERP e a linha Mage Web?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite é o sistema mais novo, desenvolvido pela própria Mage: leve e direto, ideal para começar a vender com nota fiscal rápido. O Mage ERP é a solução completa, com retaguarda, PDV com TEF, BI e módulos avançados. A linha Mage Web reúne sistemas 100% online por assinatura, acessados pelo navegador."}},
+        {"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite tem planos a partir de R$ 79,99 por mês. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas — na demonstração gratuita você recebe a proposta exata, sem compromisso."}},
         {"@type":"Question","name":"O PDV funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mage ERP emite o cupom fiscal em contingência quando a conexão cai e autoriza automaticamente com a Secretaria da Fazenda quando a internet volta."}},
         {"@type":"Question","name":"Os sistemas atendem quais regimes tributários?","acceptedAnswer":{"@type":"Answer","text":"Simples Nacional, Lucro Presumido e Lucro Real, com emissão de NF-e, NFC-e e NFS-e conforme a legislação de todos os 5.570 municípios do Brasil."}},
         {"@type":"Question","name":"Funciona com balanças, impressoras e máquinas de cartão?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com as principais impressoras fiscais e balanças do mercado, e o TEF integrado processa cartão e Pix direto no fluxo do caixa."}},
@@ -484,7 +493,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
         <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20Mage%20Lite." target="_blank" rel="noopener">Quero conhecer o Mage Lite</a>
         <a class="btn btn-outline" href="#ecossistema">Ver todas as soluções</a>
       </div>
-      <p class="hero-note">Suporte direto com especialista, sem menu eletrônico — (61) 99413-8978</p>
+      <p class="hero-note">Mage Lite a partir de <b style="color:var(--text)">R$ 79,99/mês</b> · Suporte direto com especialista — (61) 99413-8978</p>
     </div>
     <div class="hero-shot">
       <img class="hero-emblem" src="img/logo.png" alt="Logomarca Mage Sistemas" onerror="this.remove()">
@@ -502,10 +511,10 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
 <!-- STATS -->
 <div class="stats">
   <div class="wrap stats-grid">
-    <div class="stat"><b data-count="5570" data-format="pt">5.570</b><span>Municípios com legislação fiscal atendida</span></div>
+    <div class="stat"><b data-count="400" data-format="plus">+400</b><span>Estabelecimentos atendidos pela Mage</span></div>
+    <div class="stat"><b>Desde 2015</b><span>Mais de uma década de automação comercial</span></div>
     <div class="stat"><b data-count="1000000" data-format="mi">+1 milhão</b><span>De notas e cupons fiscais emitidos</span></div>
-    <div class="stat"><b data-count="9" data-suffix=" segmentos">9 segmentos</b><span>Com regras próprias de cada setor</span></div>
-    <div class="stat"><b data-count="3" data-suffix=" linhas">3 linhas</b><span>Lite, ERP completo e sistemas web</span></div>
+    <div class="stat"><b data-count="5570" data-format="pt">5.570</b><span>Municípios com legislação fiscal atendida</span></div>
   </div>
 </div>
 
@@ -528,6 +537,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <li>Roda liso até em computadores modestos</li>
           <li>Evolui rápido com o pedido dos clientes</li>
         </ul>
+        <p class="preco-tag"><span>A partir de</span><em>R$ 79,99/mês</em></p>
         <a class="more" href="#lite">Conhecer o Mage Lite</a>
       </article>
       <article class="eco-card">
@@ -612,6 +622,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       <div>
         <h3>Seja um dos primeiros a usar o Mage Lite</h3>
         <p>Estamos abrindo turmas de implantação com condição especial de lançamento e acompanhamento próximo da nossa equipe. Quem entra agora ajuda a moldar o produto.</p>
+        <p class="preco-tag" style="margin-top:16px"><span>Planos a partir de</span><em>R$ 79,99/mês</em></p>
       </div>
       <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Tenho%20interesse%20no%20lan%C3%A7amento%20do%20Mage%20Lite." target="_blank" rel="noopener">Garantir minha vaga</a>
     </div>
@@ -814,6 +825,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <tr><td>Força de vendas</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
           <tr><td>Autoatendimento (totem)</td><td class="col-lite no">—</td><td class="yes">✓</td><td class="no">—</td></tr>
           <tr><td>Multiloja</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Investimento mensal</td><td class="col-lite" style="font-weight:800;color:#FF8FCB">a partir de R$ 79,99</td><td class="no">sob consulta</td><td class="no">sob consulta</td></tr>
         </tbody>
       </table>
     </div>
@@ -846,6 +858,10 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       <details>
         <summary>Qual a diferença entre o Mage Lite, o Mage ERP e a linha Mage Web?</summary>
         <p>O Mage Lite é o nosso sistema mais novo, desenvolvido pela própria Mage: leve e direto, ideal para quem quer começar a vender com nota fiscal rápido. O Mage ERP é a solução completa, com retaguarda, PDV com TEF, BI e módulos avançados para operações maiores. A linha Mage Web reúne sistemas 100% online por assinatura, acessados pelo navegador. Na demonstração, indicamos o caminho certo para o seu momento.</p>
+      </details>
+      <details>
+        <summary>Quanto custa?</summary>
+        <p>O Mage Lite tem planos a partir de R$ 79,99 por mês. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas — na demonstração gratuita você recebe a proposta exata para a sua operação, sem compromisso.</p>
       </details>
       <details>
         <summary>O PDV funciona sem internet?</summary>
@@ -899,14 +915,14 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
     <div class="section-head">
       <p class="eyebrow">Quem está por trás</p>
       <h2>Sobre a Mage Sistemas.</h2>
-      <p>Somos uma empresa brasileira de automação comercial e fiscal. Nascemos no balcão: foram anos implantando e dando suporte a sistemas de gestão em centenas de comércios — e foi essa vivência que nos levou a criar o <b>Mage Lite</b>, nosso ERP próprio. Hoje atendemos estabelecimentos em todo o Brasil com uma promessa simples: sistema que funciona e gente de verdade do outro lado quando você precisa.</p>
+      <p>Desde 2015 no mercado de automação comercial e fiscal, nascemos no balcão: foram anos implantando e dando suporte a sistemas de gestão — e foi essa vivência que nos levou a criar o <b>Mage Lite</b>, nosso ERP próprio. Hoje são <b>mais de 400 estabelecimentos atendidos</b>, da nossa sede em Águas Lindas de Goiás (GO) para todo o Brasil, com uma promessa simples: sistema que funciona e gente de verdade do outro lado quando você precisa.</p>
     </div>
     <div class="pilares">
       <div class="pilar"><b>Suporte humano direto</b><span>Você fala com especialista no WhatsApp ou telefone — sem menu eletrônico, sem fila de robô.</span></div>
       <div class="pilar"><b>Desenvolvimento próprio</b><span>O Mage Lite é feito pela nossa equipe e evolui rápido com o pedido de quem usa todos os dias.</span></div>
       <div class="pilar"><b>Ecossistema completo</b><span>Desktop e web, do balcão à nuvem: você cresce de linha sem recomeçar do zero.</span></div>
     </div>
-    <p class="dados">Mage Sistemas · CNPJ 23.127.266/0001-03 · (61) 99413-8978 · atendimento em todo o Brasil</p>
+    <p class="dados">Mage Sistemas · CNPJ 23.127.266/0001-03 · Águas Lindas de Goiás – GO · (61) 99413-8978 · atendimento em todo o Brasil</p>
   </div>
 </section>
 
@@ -971,7 +987,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
     <div class="foot-grid">
       <div>
         <a class="logo" href="#" style="margin-bottom:14px"><img class="logomark" src="img/logo.png" alt="" style="width:44px" onerror="this.nextElementSibling.style.display='grid';this.remove()"><span class="mark" style="display:none">M</span>Mage<em>Sistemas</em></a>
-        <p style="max-width:36ch">Transformando a complexidade da gestão empresarial em simplicidade operacional para o comércio brasileiro.</p>
+        <p style="max-width:36ch">Transformando a complexidade da gestão empresarial em simplicidade operacional para o comércio brasileiro — desde 2015.</p>
       </div>
       <div>
         <h4>Soluções</h4>
@@ -1055,6 +1071,7 @@ document.getElementById('waForm').addEventListener('submit', function(e){
   var fmt = function(el, v){
     var f = el.dataset.format, suf = el.dataset.suffix || '';
     if(f === 'mi'){ return v >= 1000000 ? '+1 milhão' : '+' + Math.round(v/1000) + ' mil'; }
+    if(f === 'plus'){ return '+' + v.toLocaleString('pt-BR'); }
     if(f === 'pt'){ return v.toLocaleString('pt-BR'); }
     return v + suf;
   };
