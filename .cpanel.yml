@@ -8,5 +8,7 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH/
     - /bin/cp webchat.js $DEPLOYPATH/
     - /bin/cp privacidade.html $DEPLOYPATH/
+    - /bin/cp sistema-para-*.html $DEPLOYPATH/
+    - /bin/cp sitemap.xml robots.txt $DEPLOYPATH/
     - /bin/mkdir -p $DEPLOYPATH/img
     - /bin/cp -R img/. $DEPLOYPATH/img/

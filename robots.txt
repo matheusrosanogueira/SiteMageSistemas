@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://magesistemas.com.br/sitemap.xml

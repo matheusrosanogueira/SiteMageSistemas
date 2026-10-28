@@ -13,6 +13,7 @@
 <meta name="twitter:image" content="https://magesistemas.com.br/img/og.png">
 <meta name="theme-color" content="#0A0718">
 <meta property="og:url" content="https://magesistemas.com.br/">
+<link rel="canonical" href="https://magesistemas.com.br/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -191,7 +192,9 @@ section{padding:96px 0;scroll-margin-top:84px}
 /* segmentos */
 #segmentos{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .seg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.seg{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .18s ease,transform .18s ease}
+.seg{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .18s ease,transform .18s ease;display:block;text-decoration:none;color:var(--text)}
+.seg .seg-mais{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:600;color:var(--violet-soft)}
+.seg:hover .seg-mais{text-decoration:underline}
 .seg:hover{border-color:var(--violet);transform:translateY(-3px)}
 .seg .img-slot{border-radius:0;border:none;border-bottom:1px solid var(--line);min-height:150px}
 .seg .body{padding:20px 22px}
@@ -800,42 +803,15 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
     </div>
     <p class="swipe-hint">Deslize para o lado e conheça os 9 segmentos</p>
     <div class="seg-grid">
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-supermercado.jpg" alt="Supermercado" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Supermercados</h3><p>Caixa rápido, giro de produto, promoções, combos, crediário e multiloja.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-padaria.jpg" alt="Padaria" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Padarias</h3><p>Produção com receitas, controle de perdas e balanças integradas.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-restaurante.jpg" alt="Bares e restaurantes" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Bares e restaurantes</h3><p>Mesas, comandas, delivery e cozinha com fiscal em tempo real.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-construcao.jpg" alt="Material de construção" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Material de construção</h3><p>Orçamentos por metragem, volumes pesados e reposição inteligente.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-autopecas.jpg" alt="Autopeças e oficinas" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Autopeças e oficinas</h3><p>Ordens de serviço, veículos, estoque de peças e comissão por técnico.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-farmacia.jpg" alt="Farmácias" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Farmácias</h3><p>Lote e validade, preços ABCFarma, PBMs, convênios e conformidade fiscal.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-posto.jpg" alt="Postos de combustível" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Postos de combustível</h3><p>Bombas, frentistas, LMC e integração com concentradores.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-varejo.jpg" alt="Varejo e confecções" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Varejo e confecções</h3><p>Grade de cores e tamanhos, crediário e emissão fiscal completa.</p></div>
-      </div>
-      <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-assistencia.jpg" alt="Assistência técnica" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
-        <div class="body"><h3>Assistência técnica</h3><p>Agendamentos, OS com seriais, rateio por técnico e NFS-e integrada.</p></div>
-      </div>
+      <a class="seg" href="sistema-para-supermercado.html"><div class="img-slot"><img loading="lazy" src="img/seg-supermercado.jpg" alt="Supermercado" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Supermercados</h3><p>Caixa rápido, giro de produto, promoções, combos, crediário e multiloja.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-padaria.html"><div class="img-slot"><img loading="lazy" src="img/seg-padaria.jpg" alt="Padaria" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Padarias</h3><p>Produção com receitas, controle de perdas e balanças integradas.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-restaurante.html"><div class="img-slot"><img loading="lazy" src="img/seg-restaurante.jpg" alt="Bares e restaurantes" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Bares e restaurantes</h3><p>Mesas, comandas, delivery e cozinha com fiscal em tempo real.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-material-de-construcao.html"><div class="img-slot"><img loading="lazy" src="img/seg-construcao.jpg" alt="Material de construção" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Material de construção</h3><p>Orçamentos por metragem, volumes pesados e reposição inteligente.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-autopecas.html"><div class="img-slot"><img loading="lazy" src="img/seg-autopecas.jpg" alt="Autopeças e oficinas" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Autopeças e oficinas</h3><p>Ordens de serviço, veículos, estoque de peças e comissão por técnico.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-farmacia.html"><div class="img-slot"><img loading="lazy" src="img/seg-farmacia.jpg" alt="Farmácias" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Farmácias</h3><p>Lote e validade, preços ABCFarma, PBMs, convênios e conformidade fiscal.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-posto-de-combustivel.html"><div class="img-slot"><img loading="lazy" src="img/seg-posto.jpg" alt="Postos de combustível" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Postos de combustível</h3><p>Bombas, frentistas, LMC e integração com concentradores.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-loja-de-roupas.html"><div class="img-slot"><img loading="lazy" src="img/seg-varejo.jpg" alt="Varejo e confecções" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Varejo e confecções</h3><p>Grade de cores e tamanhos, crediário e emissão fiscal completa.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
+      <a class="seg" href="sistema-para-assistencia-tecnica.html"><div class="img-slot"><img loading="lazy" src="img/seg-assistencia.jpg" alt="Assistência técnica" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div><div class="body"><h3>Assistência técnica</h3><p>Agendamentos, OS com seriais, rateio por técnico e NFS-e integrada.</p><span class="seg-mais">Conhecer a solução →</span></div></a>
     </div>
   </div>
 </section>

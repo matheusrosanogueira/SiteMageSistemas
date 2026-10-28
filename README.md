@@ -10,6 +10,9 @@ Site institucional da **Mage Sistemas** (automação comercial e fiscal), constr
 index.html          O site inteiro (HTML + CSS + JS em um único arquivo)
 webchat.js          Widget de webchat da plataforma Mage (api.magesistemas.com)
 privacidade.html    Política de privacidade (LGPD)
+sistema-para-*.html Nove páginas de segmento (SEO + conversão)
+sitemap.xml         Mapa do site para o Google
+robots.txt          Diretivas de indexação
 baixar-logos.php    Script de setup: baixa os logos dos parceiros e se apaga sozinho
 img/
   logo.png          Logomarca (esfera) — também é o favicon

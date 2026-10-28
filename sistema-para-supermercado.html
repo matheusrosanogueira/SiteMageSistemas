@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sistema para Supermercado e Mercadinho — Mage Sistemas</title>
+<meta name="description" content="Sistema completo para supermercado e mercadinho: PDV rápido, balanças, crediário, controle de validade e emissão de NFC-e. A partir de R$ 79,99/mês.">
+<link rel="canonical" href="https://magesistemas.com.br/sistema-para-supermercado.html">
+<meta property="og:title" content="Sistema para Supermercado e Mercadinho — Mage Sistemas">
+<meta property="og:description" content="Sistema completo para supermercado e mercadinho: PDV rápido, balanças, crediário, controle de validade e emissão de NFC-e. A partir de R$ 79,99/mês.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://magesistemas.com.br/sistema-para-supermercado.html">
+<meta property="og:image" content="https://magesistemas.com.br/img/seg-supermercado.jpg">
+<meta name="theme-color" content="#0A0718">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0718;--bg-2:#110C28;--card:#191241;--card-2:#231A56;--line:rgba(255,255,255,.1);--line-2:rgba(255,255,255,.18);
+--text:#F3F0FC;--muted:#A8A0CE;--violet:#7C5CFF;--violet-soft:#A78BFF;--gold:#E23A9D;--ok:#35C98B;--radius:16px;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;font-weight:800;letter-spacing:-.015em}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:15px 28px;transition:transform .18s ease,box-shadow .18s ease;cursor:pointer;border:none}
+.btn-primary{background:linear-gradient(100deg,#7C3AED,#E23A9D);color:#fff;box-shadow:0 10px 28px -10px rgba(226,58,157,.55)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(226,58,157,.65)}
+.btn-outline{background:transparent;color:var(--text);border:1.5px solid var(--line-2)}
+.btn-outline:hover{border-color:var(--violet);color:var(--violet-soft)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+header{position:sticky;top:0;z-index:50;background:rgba(10,7,24,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{font-family:var(--display);font-weight:800;font-size:21px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{width:36px;height:auto;filter:drop-shadow(0 0 10px rgba(226,58,157,.45))}
+.logo em{font-style:normal;background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav .links{display:flex;gap:22px;align-items:center}
+.nav .links a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500}
+.nav .links a:hover{color:var(--text)}
+.nav .btn{padding:11px 20px;font-size:14px}
+.bc{font-size:13px;color:var(--muted);padding:26px 0 0}
+.bc a{color:var(--violet-soft);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.04fr .96fr;gap:52px;align-items:center;padding:34px 0 72px}
+.hero h1{font-size:clamp(32px,4.4vw,48px);margin:14px 0 18px}
+.hero .lead{font-size:17.5px;color:var(--muted)}
+.kicker{display:inline-block;background:rgba(124,92,255,.14);border:1px solid rgba(124,92,255,.42);color:var(--violet-soft);font-weight:600;font-size:13px;padding:7px 15px;border-radius:999px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.chips span{border:1px solid var(--line-2);border-radius:999px;padding:7px 15px;font-size:13px;font-weight:500}
+.ctas{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.foto{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 34px 80px -34px rgba(0,0,0,.7)}
+section{padding:72px 0}
+.eyebrow{color:#FF7FC4;font-weight:600;font-size:14px;margin-bottom:10px}
+.head h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px}
+.head p{color:var(--muted);max-width:62ch}
+.dores{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.dor{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s ease,border-color .18s ease}
+.dor:hover{transform:translateY(-3px);border-color:var(--violet)}
+.dor b{display:block;font-size:16.5px;margin-bottom:8px;font-family:var(--display)}
+.dor b::before{content:"→ ";color:var(--gold)}
+.dor p{font-size:14.5px;color:var(--muted)}
+#indicado{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prods{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:36px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.prod.destaque{background:linear-gradient(160deg,var(--card-2),var(--card));border:1.5px solid var(--gold);box-shadow:0 26px 70px -30px rgba(226,58,157,.45)}
+.prod .tag{display:inline-block;font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted);margin-bottom:12px}
+.prod.destaque .tag{background:rgba(226,58,157,.15);border-color:rgba(226,58,157,.55);color:#FF8FCB}
+.prod h3{font-size:22px;margin-bottom:8px}
+.prod p{font-size:14.5px;color:var(--muted)}
+.faq{max-width:760px;margin-top:36px}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:600;font-size:15.5px;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:20px;color:var(--gold)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 22px 20px;color:var(--muted);font-size:14.5px}
+.cta-final{background:linear-gradient(120deg,rgba(124,92,255,.22),rgba(226,58,157,.16));border:1px solid var(--line-2);border-radius:20px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.cta-final h2{font-size:clamp(22px,2.8vw,30px);margin-bottom:6px}
+.cta-final p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+.wa-float{position:fixed;left:22px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:80;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(18,140,66,.6)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:36px;padding-bottom:56px}.prods{grid-template-columns:1fr}.nav .links{display:none}}
+@media (max-width:640px){.dores{grid-template-columns:1fr}section{padding:56px 0}.ctas{flex-direction:column}.ctas .btn{width:100%}.cta-final{padding:26px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://magesistemas.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Supermercados e mercadinhos", "item": "https://magesistemas.com.br/sistema-para-supermercado.html"}]}, {"@type": "Service", "name": "Sistema de gestão para supermercado", "provider": {"@type": "Organization", "name": "Mage Sistemas", "telephone": "+55-61-99413-8978"}, "areaServed": "BR", "description": "Sistema completo para supermercado e mercadinho: PDV rápido, balanças, crediário, controle de validade e emissão de NFC-e. A partir de R$ 79,99/mês."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O sistema funciona com balança e leitor de código de barras?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Integramos com as principais balanças e impressoras do varejo alimentar, e o PDV trabalha com leitor de código de barras para agilizar a fila."}}, {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "O Mage Lite tem planos a partir de R$ 79,99 por mês, já com a emissão fiscal inclusa. Na demonstração gratuita você recebe a proposta exata para a sua operação."}}]}]}</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="">Mage<em>Sistemas</em></a>
+    <nav class="links">
+      <a href="index.html#ecossistema">Soluções</a>
+      <a href="index.html#segmentos">Segmentos</a>
+      <a href="index.html#reforma">Reforma Tributária</a>
+      <a href="index.html#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1%21%20Tenho%20um%20mercadinho/supermercado%20e%20quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Mage." target="_blank" rel="noopener">Pedir demonstração</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <p class="bc"><a href="index.html">Início</a> › <a href="index.html#segmentos">Segmentos</a> › Supermercados e mercadinhos</p>
+  <div class="hero">
+    <div>
+      <span class="kicker">Sistema Mage para supermercado</span>
+      <h1>O mercadinho girando, o caixa voando e a nota saindo.</h1>
+      <p class="lead">Fila no caixa, produto vencendo na gôndola e o caderninho de fiado que ninguém controla? O sistema Mage resolve o dia a dia do seu mercado — do leitor de código de barras à nota fiscal.</p>
+      <div class="chips"><span>Caixa rápido</span><span>Balanças integradas</span><span>Crediário</span><span>Validade e perdas</span></div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1%21%20Tenho%20um%20mercadinho/supermercado%20e%20quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Mage." target="_blank" rel="noopener">Quero uma demonstração grátis</a>
+        <a class="btn btn-outline" href="#resolve">Ver como resolve</a>
+      </div>
+    </div>
+    <div class="foto"><img src="img/seg-supermercado.jpg" alt="Supermercados e mercadinhos com o sistema Mage" width="1200" height="670"></div>
+  </div>
+</div>
+
+<section id="resolve">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">O dia a dia de quem vive isso</p>
+      <h2>As dores que a gente resolve.</h2>
+      <p>Sistema bom é o que entende a rotina do seu balcão. Olha o que muda:</p>
+    </div>
+    <div class="dores">
+      <div class="dor"><b>Fila crescendo no caixa</b><p>Frente de caixa feita para velocidade: leitor de código de barras, atalhos por seção e TEF integrado — cartão e Pix sem digitar valor.</p></div>
+      <div class="dor"><b>Produto vencendo na prateleira</b><p>Controle de validade e giro de estoque: o sistema avisa o que está parado e o que está perto de vencer, antes de virar prejuízo.</p></div>
+      <div class="dor"><b>O caderninho de fiado</b><p>Crediário dentro do sistema: limite por cliente, histórico de compras e cobrança organizada — sem caderno sumindo.</p></div>
+      <div class="dor"><b>Balança de um lado, caixa do outro</b><p>Integração com as principais balanças do mercado: pesou, etiquetou, passou no caixa. Sem redigitação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="indicado">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">O sistema certo para o seu momento</p>
+      <h2>Qual Mage é o seu?</h2>
+    </div>
+    <div class="prods">
+      <article class="prod destaque">
+        <span class="tag">Indicado para supermercado</span>
+        <h3>Mage ERP</h3>
+        <p>Para mercado com mais movimento: retaguarda completa, multiloja, promoções e combos, importação de NF-e da Sefaz e BI no celular.</p>
+      </article>
+      <article class="prod">
+        <span class="tag">Alternativa</span>
+        <h3>Mage Lite</h3>
+        <p>Para o mercadinho que está começando: vendas, estoque, financeiro e NFC-e por R$ 79,99/mês.</p>
+      </article>
+    </div>
+    <div class="faq">
+      <details><summary>O sistema funciona com balança e leitor de código de barras?</summary><p>Sim. Integramos com as principais balanças e impressoras do varejo alimentar, e o PDV trabalha com leitor de código de barras para agilizar a fila.</p></details>
+      <details><summary>Quanto custa?</summary><p>O Mage Lite tem planos a partir de R$ 79,99 por mês — já com a emissão fiscal inclusa. Na demonstração gratuita você recebe a proposta exata para a sua operação, sem compromisso.</p></details>
+      <details><summary>E a Reforma Tributária?</summary><p>Nossos sistemas acompanham as Notas Técnicas do Portal Nacional da NF-e (incluindo a NT 2025.002, dos grupos de IBS/CBS) e se atualizam a cada nova versão. <a href="index.html#reforma">Veja a linha do tempo completa da Reforma</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-final">
+      <div>
+        <h2>Veja o sistema rodando no seu segmento.</h2>
+        <p>Demonstração gratuita pelo WhatsApp — você mostra sua rotina, a gente mostra a solução.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1%21%20Tenho%20um%20mercadinho/supermercado%20e%20quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Mage." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mage Sistemas · CNPJ 23.127.266/0001-03 · Águas Lindas de Goiás – GO</span>
+    <span><a href="index.html">magesistemas.com.br</a> · <a href="privacidade.html">Política de Privacidade</a></span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5561994138978?text=Ol%C3%A1%21%20Tenho%20um%20mercadinho/supermercado%20e%20quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20sistema%20Mage." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4L9.5 8c-.1-.3-.3-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg></a>
+
+</body>
+</html>
