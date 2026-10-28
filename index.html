@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mage Sistemas — Mage Lite, Mage ERP e Linha Web | Automação comercial e fiscal</title>
+<meta name="description" content="Conheça o Mage Lite, o novo ERP da Mage Sistemas, além do Mage ERP completo e da linha Mage Web 100% online. PDV, emissão fiscal, estoque e financeiro para todo o Brasil.">
+<meta property="og:title" content="Mage Sistemas — Tecnologia para você assumir o controle do seu negócio">
+<meta property="og:description" content="Mage Lite, Mage ERP e linha Mage Web: gestão, PDV e emissão fiscal do tamanho da sua operação.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://magesistemas.com.br/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://magesistemas.com.br/img/og.png">
+<meta name="theme-color" content="#0A0718">
+<meta property="og:url" content="https://magesistemas.com.br/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/logo.png">
+<!--
+  ===========================================================================
+  COMO ADICIONAR AS IMAGENS DO SITE
+  Crie uma pasta chamada  img  ao lado deste arquivo e salve os arquivos
+  com estes nomes (os espaços aparecem sozinhos quando o arquivo existir):
+
+    img/logo.png               Logomarca com fundo transparente (já te enviei junto)
+
+    img/hero-magelite.png      Print da tela principal do Mage Lite (hero)
+    img/lite-pdv.png           Print da tela de vendas / PDV do Mage Lite
+    img/lite-relatorios.png    Print de relatórios ou financeiro do Mage Lite
+    img/erp-retaguarda.png     Print do Mage ERP (retaguarda)
+    img/erp-pdv.png            Print do PDV do Mage ERP
+    img/web-painel.png         Print de um painel da linha Mage Web
+    img/parceiro-stone.png     Logotipo oficial da Stone (fundo transparente)
+    img/parceiro-cielo.png     Logotipo oficial da Cielo (fundo transparente)
+    img/parceiro-vero.png      Logotipo oficial da Vero (fundo transparente)
+    img/parceiro-fiserv.png    Logotipo oficial da Fiserv (fundo transparente)
+    img/parceiro-pagbank.png   Logotipo oficial do PagBank (fundo transparente)
+    img/parceiro-supertef.png  Logotipo oficial do SuperTEF (fundo transparente)
+    img/parceiro-paygo.png     Logotipo oficial da PayGo (fundo transparente)
+    img/parceiro-getcard.png   Logotipo oficial da Getcard (fundo transparente)
+    img/parceiro-getnet.png    ... e o mesmo vale para: getnet, rede, mercadopago,
+    img/parceiro-*.png         picpay, caixa, sicredi, safrapay, sipag, clover,
+                               bin, ifoodpago e redeflex
+    img/seg-supermercado.jpg   Foto do segmento supermercado
+    img/seg-padaria.jpg        Foto do segmento padaria
+    img/seg-restaurante.jpg    Foto do segmento bares e restaurantes
+    img/seg-construcao.jpg     Foto do segmento material de construção
+    img/seg-autopecas.jpg      Foto do segmento autopeças
+    img/seg-farmacia.jpg       Foto do segmento farmácia
+    img/seg-posto.jpg          Foto do segmento posto de combustível
+    img/seg-varejo.jpg         Foto do segmento varejo
+    img/seg-assistencia.jpg    Foto do segmento assistência técnica
+  ===========================================================================
+-->
+<style>
+:root{
+  --bg:#0A0718;
+  --bg-2:#110C28;
+  --card:#191241;
+  --card-2:#231A56;
+  --line:rgba(255,255,255,.1);
+  --line-2:rgba(255,255,255,.18);
+  --text:#F3F0FC;
+  --muted:#A8A0CE;
+  --violet:#7C5CFF;
+  --violet-soft:#A78BFF;
+  --deep:#3B29BD;
+  --gold:#E23A9D;
+  --gold-dark:#C4267F;
+  --ok:#35C98B;
+  --radius:16px;
+  --maxw:1140px;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.1;font-weight:700;letter-spacing:-.015em}
+img{max-width:100%;display:block}
+a{color:var(--violet-soft)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:15px 28px;transition:background .18s ease,transform .18s ease,border-color .18s ease;cursor:pointer;border:none}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:linear-gradient(100deg,#7C3AED,#E23A9D);color:#fff;box-shadow:0 10px 28px -10px rgba(226,58,157,.55)}
+.btn-primary:hover{background:linear-gradient(100deg,#6A2ED6,#C4267F)}
+.btn-outline{background:transparent;color:var(--text);border:1.5px solid var(--line-2)}
+.btn-outline:hover{border-color:var(--violet);color:var(--violet-soft)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ---------- slots de imagem ---------- */
+.img-slot{position:relative;border-radius:var(--radius);overflow:hidden;background:
+  repeating-linear-gradient(45deg,rgba(255,255,255,.03) 0 12px,transparent 12px 24px),var(--bg-2);
+  border:1.5px dashed var(--line-2);min-height:220px;display:grid;place-items:center}
+.img-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.img-slot .hint{padding:26px;text-align:center;color:var(--muted);font-size:13.5px;max-width:34ch}
+.img-slot .hint b{display:block;color:var(--text);font-size:14.5px;margin-bottom:6px}
+.img-slot code{background:rgba(255,255,255,.08);padding:2px 8px;border-radius:6px;font-size:12.5px;color:var(--violet-soft)}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 34px 80px -34px rgba(0,0,0,.7)}
+.frame .bar{display:flex;gap:6px;padding:4px 6px 12px}
+.frame .bar span{width:10px;height:10px;border-radius:50%;background:var(--line-2)}
+.frame .bar span:first-child{background:var(--gold)}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(18,14,32,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:11px}
+.logo .logomark{width:38px;height:auto;filter:drop-shadow(0 0 10px rgba(226,58,157,.45))}
+.logo .mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--violet),var(--deep));display:grid;place-items:center;color:#fff;font-size:16px;font-weight:800}
+.logo em{font-style:normal;background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-emblem{position:absolute;top:-34px;left:-30px;width:96px;z-index:2;filter:drop-shadow(0 12px 30px rgba(226,58,157,.5))}
+.hero-shot{position:relative}
+.nav-links{display:flex;gap:26px;align-items:center;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+.nav-links a:hover{color:var(--text)}
+.nav .btn{padding:11px 20px;font-size:14px}
+.menu-btn{display:none;background:none;border:none;font-size:26px;color:var(--text);cursor:pointer}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(1000px 560px at 78% -12%, rgba(124,92,255,.3), transparent 60%),
+  radial-gradient(760px 460px at -8% 108%, rgba(226,58,157,.16), transparent 55%),
+  var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:84px 0 92px}
+.hero .kicker{display:inline-flex;align-items:center;gap:9px;background:rgba(124,92,255,.14);border:1px solid rgba(124,92,255,.42);color:var(--violet-soft);font-weight:600;font-size:13.5px;padding:8px 16px;border-radius:999px}
+.hero .kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero h1{font-size:clamp(36px,5vw,60px);margin:20px 0 20px;font-weight:800}
+.hero h1 .grad{background:linear-gradient(100deg,#A78BFF 10%,#E86BC3 55%,#FF5FA8 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:52ch}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.hero-chips span{border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:500;color:var(--text)}
+.hero-ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero-note{margin-top:22px;font-size:14px;color:var(--muted)}
+.hero-shot{animation:rise .7s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.hero-shot .img-slot{min-height:340px}
+
+/* ---------- stats ---------- */
+.stats{border-bottom:1px solid var(--line);background:var(--bg-2)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:36px 0}
+.stat b{font-family:var(--display);font-size:29px;font-weight:800;display:block;color:var(--text)}
+.stat span{color:var(--muted);font-size:14px}
+
+/* ---------- sections ---------- */
+section{padding:96px 0;scroll-margin-top:84px}
+.eyebrow{color:#FF7FC4;font-weight:600;font-size:14px;letter-spacing:.02em;margin-bottom:12px}
+.section-head{max-width:680px;margin-bottom:52px}
+.section-head h2{font-size:clamp(30px,3.8vw,46px);margin-bottom:14px;font-weight:800}
+.section-head p{color:var(--muted);font-size:17px}
+.section-head p b{color:var(--text)}
+
+/* ecossistema */
+.eco-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:22px;align-items:stretch}
+.eco-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;display:flex;flex-direction:column;gap:14px}
+.eco-card h3{font-size:23px}
+.eco-card .tag{align-self:flex-start;font-size:12.5px;font-weight:600;padding:6px 13px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted)}
+.eco-card p{color:var(--muted);font-size:15px;flex:1}
+.eco-card ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14.5px}
+.eco-card li{padding-left:26px;position:relative;color:var(--text)}
+.eco-card li::before{content:"✓";position:absolute;left:0;top:0;color:var(--ok);font-weight:800}
+.eco-card a.more{font-weight:600;font-size:14.5px;text-decoration:none;margin-top:8px;color:var(--violet-soft)}
+.eco-card a.more:hover{text-decoration:underline}
+.eco-card.featured{background:linear-gradient(160deg,var(--card-2),var(--card));border:1.5px solid var(--gold);box-shadow:0 26px 70px -30px rgba(226,58,157,.45)}
+.eco-card.featured .tag{background:rgba(226,58,157,.15);border-color:rgba(226,58,157,.55);color:#FF8FCB}
+
+/* mage lite */
+#lite{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lite-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:64px}
+.checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin-top:26px}
+.checklist li{padding-left:28px;position:relative;font-size:15px;font-weight:500}
+.checklist li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.lite-shots{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.shot-caption{margin-top:12px;font-size:14px;color:var(--muted);text-align:center}
+.lite-cta{margin-top:64px;background:linear-gradient(120deg,rgba(124,92,255,.22),rgba(226,58,157,.16));border:1px solid var(--line-2);border-radius:20px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.lite-cta h3{font-size:25px;margin-bottom:8px}
+.lite-cta p{color:var(--muted);max-width:52ch}
+
+/* mage erp */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.fiscal-badges{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.badge{background:var(--card-2);border:1px solid var(--line-2);color:var(--text);font-family:var(--display);font-weight:700;font-size:13.5px;padding:9px 17px;border-radius:9px}
+.module-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
+.module{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.module h4{font-size:17px;margin-bottom:6px}
+.module h4 span{color:var(--violet-soft);margin-right:8px;font-family:var(--body);font-weight:600;font-size:13px}
+.module p{font-size:14px;color:var(--muted)}
+
+/* segmentos */
+#segmentos{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.seg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.seg{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .18s ease,transform .18s ease}
+.seg:hover{border-color:var(--violet);transform:translateY(-3px)}
+.seg .img-slot{border-radius:0;border:none;border-bottom:1px solid var(--line);min-height:150px}
+.seg .body{padding:20px 22px}
+.seg h3{font-size:17.5px;margin-bottom:7px}
+.seg p{font-size:14px;color:var(--muted)}
+
+/* linha web */
+.web-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.web-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:border-color .18s ease}
+.web-card:hover{border-color:var(--violet)}
+.web-card h3{font-size:20px;margin-bottom:8px}
+.web-card h3 span{color:var(--gold)}
+.web-card p{font-size:14.5px;color:var(--muted)}
+.web-card .aud{margin-top:16px;font-size:12.5px;font-weight:600;color:var(--violet-soft);background:rgba(124,92,255,.16);display:inline-block;padding:6px 13px;border-radius:999px}
+.web-shot{margin-top:44px}
+
+
+/* faixa TEF Dedicado e SmartPOS */
+.tef-band{margin-top:60px;background:linear-gradient(150deg,var(--card),var(--card-2));border:1px solid var(--line);border-radius:20px;padding:40px 40px 34px;overflow:hidden}
+.tef-band h3{font-size:clamp(22px,2.6vw,30px);font-weight:800;margin-bottom:10px}
+.tef-band h3 span{background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tef-band > p{color:var(--muted);font-size:15.5px;max-width:62ch;margin-bottom:26px}
+.logo-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.logo-track{display:flex;gap:16px;width:max-content;animation:rolar 46s linear infinite}
+.logo-track + .logo-track{margin-top:16px}
+.logo-track.reverse{animation-direction:reverse}
+.logo-marquee:hover .logo-track{animation-play-state:paused}
+@keyframes rolar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.p-logo{background:#F7F5FC;border-radius:12px;height:66px;min-width:158px;display:flex;align-items:center;justify-content:center;padding:0 28px;gap:8px}
+.p-logo img{max-height:36px;max-width:120px;width:auto}
+.p-logo span{color:#3A3554;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.2px;white-space:nowrap}
+@media (max-width:640px){.tef-band{padding:26px 22px}}
+
+/* faq */
+.faq{max-width:800px}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:22px;color:var(--gold);flex:none;transition:transform .18s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 24px 22px;color:var(--muted);font-size:15px}
+
+/* revenda */
+#revenda{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.rev-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rev-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px}
+.rev-card b{display:block;font-size:15px;margin-bottom:3px}
+.rev-card span{font-size:13.5px;color:var(--muted)}
+
+/* contato */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-info h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:16px;font-weight:800}
+.contact-info p{color:var(--muted);font-size:16.5px;max-width:48ch}
+.contact-direct{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.socials{display:flex;gap:12px;margin-top:26px}
+.socials a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line-2);transition:background .18s ease,border-color .18s ease}
+.socials a:hover{background:var(--violet);border-color:var(--violet)}
+.socials svg{width:20px;height:20px;fill:var(--text)}
+.form-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:36px}
+.form-card h3{font-size:21px;margin-bottom:6px}
+.form-card .sub{color:var(--muted);font-size:14.5px;margin-bottom:24px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:7px;color:var(--text)}
+.field input,.field select,.field textarea{width:100%;background:var(--bg-2);border:1px solid var(--line-2);border-radius:11px;padding:13px 15px;color:var(--text);font-family:var(--body);font-size:15px}
+.field textarea{resize:vertical;min-height:96px}
+.field input::placeholder,.field textarea::placeholder{color:#6E6890}
+.form-card .btn{width:100%;margin-top:6px}
+.form-note{margin-top:14px;font-size:12.5px;color:var(--muted);text-align:center}
+
+/* footer */
+footer{padding:56px 0 36px;font-size:14px;color:var(--muted)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:38px}
+.foot-grid h4{font-size:14.5px;margin-bottom:14px;color:var(--text)}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.foot-grid a{color:var(--muted);text-decoration:none}
+.foot-grid a:hover{color:var(--text)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+
+/* whatsapp flutuante */
+.wa-float{position:fixed;left:22px;bottom:22px;z-index:80;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(18,140,66,.6);transition:transform .18s ease}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float .pulse{position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+
+/* menu ativo (scrollspy) */
+.nav-links a.active{color:var(--text);position:relative}
+.nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2.5px;border-radius:2px;background:linear-gradient(90deg,#7C5CFF,#FF5FA8)}
+
+/* brilho que segue o mouse no hero */
+.hero{position:relative}
+.hero .mouse-glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(226,58,157,.13),rgba(124,92,255,.09) 45%,transparent 70%);
+  transform:translate(-50%,-50%);left:70%;top:30%;transition:left .25s ease-out,top .25s ease-out;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+@media (hover:none){.hero .mouse-glow{display:none}}
+
+/* tabela comparativa */
+.compare-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.compare{width:100%;border-collapse:collapse;min-width:640px;font-size:14.5px}
+.compare th,.compare td{padding:15px 20px;text-align:center;border-bottom:1px solid var(--line)}
+.compare th:first-child,.compare td:first-child{text-align:left;font-weight:500;color:var(--text);
+  position:sticky;left:0;background:var(--card);z-index:2;box-shadow:8px 0 14px -10px rgba(0,0,0,.55)}
+.compare thead th{font-family:var(--display);font-size:16.5px;font-weight:700;padding:20px}
+.compare thead th small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted);margin-top:3px}
+.compare tbody tr:last-child td{border-bottom:none}
+.compare .yes{color:var(--ok);font-weight:800;font-size:16px}
+.compare .no{color:#5A5480;font-weight:600}
+.compare .col-lite{background:linear-gradient(180deg,rgba(226,58,157,.1),rgba(124,92,255,.06))}
+.compare thead .col-lite{color:#FF8FCB}
+.compare-note{margin-top:14px;font-size:13.5px;color:var(--muted)}
+
+@media (prefers-reduced-motion:reduce){.hero .mouse-glow{display:none}}
+
+
+/* ---- webchat Mage: repintura na identidade da marca ---- */
+#channel-chat-button{background:linear-gradient(135deg,#7C3AED,#E23A9D)!important;
+  box-shadow:0 12px 32px -8px rgba(226,58,157,.6)!important;transition:transform .18s ease!important}
+#channel-chat-button:hover{transform:scale(1.08)!important}
+#channel-chat-header{background:linear-gradient(100deg,#3B29BD,#7C3AED 55%,#E23A9D)!important}
+#channel-chat-header h3{font-family:var(--display)!important;letter-spacing:.2px}
+#channel-chat-container{border-radius:18px!important;overflow:hidden!important;
+  box-shadow:0 30px 70px -24px rgba(20,10,50,.55)!important;border:1px solid #E6E0F5!important}
+#channel-chat-send,#channel-chat-attach{color:#7C3AED!important}
+#channel-chat-send:hover,#channel-chat-attach:hover{background-color:rgba(124,58,237,.1)!important}
+#channel-chat-input{border:1px solid #D9D2EE!important;border-radius:12px!important}
+#channel-chat-input:focus{outline:2px solid #B79CFF!important;border-color:#7C3AED!important}
+.channel-sent{background:#EEE6FF!important;border:1px solid #E0D3FF!important}
+.channel-received{border:1px solid #F3D9EC!important;box-shadow:0 1px 3px rgba(226,58,157,.08)!important}
+#channel-chat-messages{background:#FAF8FF!important}
+#channel-chat-input-area{background:#FAF8FF!important;border-top:1px solid #ECE6F8!important}
+
+/* ---- polimento geral ---- */
+::selection{background:rgba(226,58,157,.4);color:#fff}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#4B3ACB,#7C3AED);border-radius:8px;border:2px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#7C3AED,#E23A9D)}
+html{scrollbar-color:#5B44D6 var(--bg)}
+
+.module,.web-card,.eco-card,.rev-card{transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.module:hover,.rev-card:hover{border-color:var(--violet);transform:translateY(-3px)}
+.web-card:hover,.eco-card:hover{transform:translateY(-3px);box-shadow:0 18px 44px -22px rgba(124,92,255,.4)}
+.eco-card.featured:hover{box-shadow:0 26px 70px -26px rgba(226,58,157,.55)}
+
+header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,7,24,.94)}
+
+/* responsive */
+@media (max-width:960px){
+  .hero-grid,.split,.rev-grid,.contact-grid,.lite-hero{grid-template-columns:1fr;gap:44px}
+  .eco-grid{grid-template-columns:1fr}
+  .seg-grid,.web-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+.only-mobile{display:none}
+@media (max-width:640px){
+  /* menu de tela cheia */
+  .nav-links{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,7,24,.98);backdrop-filter:blur(8px);flex-direction:column;padding:20px 24px calc(24px + env(safe-area-inset-bottom));gap:0;align-items:stretch;overflow-y:auto;z-index:60}
+  .nav-links.open{display:flex}
+  .nav-links li{border-bottom:1px solid var(--line)}
+  .nav-links li:last-child{border-bottom:none}
+  .nav-links a{display:block;font-size:19px;font-weight:600;color:var(--text);padding:17px 4px}
+  .nav-links a.active::after{display:none}
+  .only-mobile{display:block;border-bottom:none!important;padding-top:18px}
+  .only-mobile .btn{width:100%}
+  .menu-btn{display:block}
+  .nav > .btn{display:none}
+  body.menu-aberto{overflow:hidden}
+
+  .web-grid,.checklist,.module-grid,.rev-cards,.lite-shots,.foot-grid{grid-template-columns:1fr}
+  section{padding:68px 0;scroll-margin-top:76px}
+  .hero-grid{padding:56px 0 64px}
+  .lite-cta{padding:28px}
+
+  /* botões do hero na largura total */
+  .hero-ctas{flex-direction:column}
+  .hero-ctas .btn{width:100%}
+
+  /* emblema da esfera dentro da tela */
+  .hero-emblem{width:64px;top:-24px;left:8px}
+
+  /* segmentos: carrossel deslizável */
+  .seg-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 18px;margin:0 -24px;-webkit-overflow-scrolling:touch}
+  .seg-grid::-webkit-scrollbar{display:none}
+  .seg{flex:0 0 80%;scroll-snap-align:center}
+  .seg:hover{transform:none}
+  .swipe-hint{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;margin:-32px 0 20px}
+  .swipe-hint::before{content:"";width:26px;height:2px;border-radius:2px;background:linear-gradient(90deg,#7C5CFF,#FF5FA8)}
+
+  /* botões flutuantes acima da barra do iPhone */
+  .wa-float{bottom:calc(20px + env(safe-area-inset-bottom))}
+  #channel-chat-widget{bottom:calc(20px + env(safe-area-inset-bottom))!important}
+}
+@media (min-width:641px){.swipe-hint{display:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .logo-track{animation:none}
+  .logo-marquee{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+  .hero-shot{animation:none}
+  .wa-float .pulse{animation:none;display:none}
+  .btn,.seg,.module,.web-card,.eco-card,.rev-card,#channel-chat-button{transition:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Mage Sistemas",
+      "url": "https://magesistemas.com.br/",
+      "logo": "https://magesistemas.com.br/img/logo.png",
+      "telephone": "+55-61-99413-8978",
+      "taxID": "23.127.266/0001-03",
+      "sameAs": [
+        "https://www.instagram.com/magesistemas",
+        "https://www.facebook.com/magesistemas"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Qual a diferença entre o Mage Lite, o Mage ERP e a linha Mage Web?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite é o sistema mais novo, desenvolvido pela própria Mage: leve e direto, ideal para começar a vender com nota fiscal rápido. O Mage ERP é a solução completa, com retaguarda, PDV com TEF, BI e módulos avançados. A linha Mage Web reúne sistemas 100% online por assinatura, acessados pelo navegador."}},
+        {"@type":"Question","name":"O PDV funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mage ERP emite o cupom fiscal em contingência quando a conexão cai e autoriza automaticamente com a Secretaria da Fazenda quando a internet volta."}},
+        {"@type":"Question","name":"Os sistemas atendem quais regimes tributários?","acceptedAnswer":{"@type":"Answer","text":"Simples Nacional, Lucro Presumido e Lucro Real, com emissão de NF-e, NFC-e e NFS-e conforme a legislação de todos os 5.570 municípios do Brasil."}},
+        {"@type":"Question","name":"Funciona com balanças, impressoras e máquinas de cartão?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com as principais impressoras fiscais e balanças do mercado, e o TEF integrado processa cartão e Pix direto no fluxo do caixa."}},
+        {"@type":"Question","name":"Como funciona o suporte?","acceptedAnswer":{"@type":"Answer","text":"Atendimento direto com um especialista, sem menu eletrônico, pelo WhatsApp ou telefone (61) 99413-8978."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#"><img class="logomark" src="img/logo.png" alt="" onerror="this.nextElementSibling.style.display='grid';this.remove()"><span class="mark" style="display:none">M</span>Mage<em>Sistemas</em></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#lite">Mage Lite</a></li>
+        <li><a href="#erp">Mage ERP</a></li>
+        <li><a href="#web">Linha Web</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+        <li><a href="#comparar">Comparar</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+        <li><a href="#revenda">Revenda</a></li>
+        <li class="only-mobile"><a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20dos%20sistemas%20Mage." target="_blank" rel="noopener">Solicitar demonstração</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#contato">Solicitar demonstração</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="mouse-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><span class="dot"></span>Novo: Mage Lite, o ERP desenvolvido pela Mage</span>
+      <h1>Tecnologia para você assumir o <span class="grad">controle total</span> do seu negócio.</h1>
+      <p class="lead">Conheça o Mage Lite: vendas, estoque, financeiro e emissão fiscal em um sistema leve, rápido e direto ao ponto — criado pela nossa própria equipe para o comércio brasileiro.</p>
+      <div class="hero-chips">
+        <span>Frente de caixa</span>
+        <span>Emissão fiscal</span>
+        <span>Controle de estoque</span>
+        <span>Financeiro</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20Mage%20Lite." target="_blank" rel="noopener">Quero conhecer o Mage Lite</a>
+        <a class="btn btn-outline" href="#ecossistema">Ver todas as soluções</a>
+      </div>
+      <p class="hero-note">Suporte direto com especialista, sem menu eletrônico — (61) 99413-8978</p>
+    </div>
+    <div class="hero-shot">
+      <img class="hero-emblem" src="img/logo.png" alt="Logomarca Mage Sistemas" onerror="this.remove()">
+      <div class="frame">
+        <div class="bar"><span></span><span></span><span></span></div>
+        <div class="img-slot">
+          <img src="img/hero-magelite.png" alt="Tela principal do sistema Mage Lite" onerror="this.remove()">
+          <div class="hint"><b>Print do Mage Lite</b>Salve a tela principal do sistema como <code>img/hero-magelite.png</code></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b data-count="5570" data-format="pt">5.570</b><span>Municípios com legislação fiscal atendida</span></div>
+    <div class="stat"><b data-count="1000000" data-format="mi">+1 milhão</b><span>De notas e cupons fiscais emitidos</span></div>
+    <div class="stat"><b data-count="9" data-suffix=" segmentos">9 segmentos</b><span>Com regras próprias de cada setor</span></div>
+    <div class="stat"><b data-count="3" data-suffix=" linhas">3 linhas</b><span>Lite, ERP completo e sistemas web</span></div>
+  </div>
+</div>
+
+<!-- ECOSSISTEMA -->
+<section id="ecossistema">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Ecossistema de produtos</p>
+      <h2>Nossas soluções.</h2>
+      <p>Três linhas de produto para cada tamanho de operação, todas com um único compromisso: sua empresa <b>vendendo, emitindo nota e com tudo sob controle</b>.</p>
+    </div>
+    <div class="eco-grid">
+      <article class="eco-card featured">
+        <span class="tag">Produto principal · Desenvolvido pela Mage</span>
+        <h3>Mage Lite</h3>
+        <p>Nosso novo ERP, criado do zero pela equipe Mage. Leve, direto e pensado para o comércio que quer vender com nota fiscal sem complicação nem mensalidade pesada.</p>
+        <ul>
+          <li>Instala e começa a vender no mesmo dia</li>
+          <li>Vendas, estoque, financeiro e fiscal</li>
+          <li>Roda liso até em computadores modestos</li>
+          <li>Evolui rápido com o pedido dos clientes</li>
+        </ul>
+        <a class="more" href="#lite">Conhecer o Mage Lite</a>
+      </article>
+      <article class="eco-card">
+        <span class="tag">Desktop · Operação completa</span>
+        <h3>Mage ERP</h3>
+        <p>A solução mais robusta da casa: retaguarda e PDV integrados para operações que exigem controle rigoroso de fiscal, estoque, financeiro e compras.</p>
+        <ul>
+          <li>PDV com TEF e funcionamento offline</li>
+          <li>NF-e, NFC-e e NFS-e</li>
+          <li>BI, força de vendas e autoatendimento</li>
+        </ul>
+        <a class="more" href="#erp">Ver o Mage ERP</a>
+      </article>
+      <article class="eco-card">
+        <span class="tag">100% online · Assinatura</span>
+        <h3>Linha Mage Web</h3>
+        <p>Gestão no navegador, de qualquer lugar. Uma família de sistemas por segmento, sem instalação e com atualização automática.</p>
+        <ul>
+          <li>MageWeb, MageFood, MageShop e outros</li>
+          <li>Computador, tablet ou celular</li>
+          <li>Emissão fiscal direto da nuvem</li>
+        </ul>
+        <a class="more" href="#web">Explorar a linha web</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MAGE LITE -->
+<section id="lite">
+  <div class="wrap">
+    <div class="lite-hero">
+      <div>
+        <p class="eyebrow">Mage Lite · Nosso produto principal</p>
+        <h2 style="font-size:clamp(30px,3.8vw,46px);font-weight:800;margin-bottom:14px">O ERP que nasceu dentro da Mage.</h2>
+        <p style="color:var(--muted);font-size:17px">Depois de anos implantando gestão em centenas de balcões, criamos nossa própria ferramenta. O Mage Lite é enxuto de propósito: <b style="color:var(--text)">só o que o comércio usa todos os dias</b>, sem telas que ninguém abre e sem treinamento demorado.</p>
+        <ul class="checklist">
+          <li>Venda rápida no balcão</li>
+          <li>Emissão de NFC-e e NF-e</li>
+          <li>Controle de estoque</li>
+          <li>Contas a pagar e receber</li>
+          <li>Cadastro simples de produtos</li>
+          <li>Relatórios do dia a dia</li>
+          <li>Leve em qualquer máquina</li>
+          <li>Suporte direto com quem fez</li>
+        </ul>
+      </div>
+      <div>
+        <div class="frame">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="img-slot" style="min-height:320px">
+            <img loading="lazy" src="img/lite-pdv.png" alt="Tela de vendas do Mage Lite" onerror="this.remove()">
+            <div class="hint"><b>Print da tela de vendas</b>Salve como <code>img/lite-pdv.png</code></div>
+          </div>
+        </div>
+        <p class="shot-caption">Tela de vendas do Mage Lite</p>
+      </div>
+    </div>
+    <div class="lite-shots">
+      <div>
+        <div class="frame">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="img-slot">
+            <img loading="lazy" src="img/lite-relatorios.png" alt="Relatórios do Mage Lite" onerror="this.remove()">
+            <div class="hint"><b>Print de relatórios / financeiro</b>Salve como <code>img/lite-relatorios.png</code></div>
+          </div>
+        </div>
+        <p class="shot-caption">Financeiro e relatórios em tempo real</p>
+      </div>
+      <div>
+        <div class="frame">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="img-slot">
+            <img src="img/hero-magelite.png" alt="Tela principal do Mage Lite" onerror="this.remove()">
+            <div class="hint"><b>Print da tela principal</b>Reaproveita o arquivo <code>img/hero-magelite.png</code></div>
+          </div>
+        </div>
+        <p class="shot-caption">Tudo em uma única tela principal</p>
+      </div>
+    </div>
+    <div class="lite-cta">
+      <div>
+        <h3>Seja um dos primeiros a usar o Mage Lite</h3>
+        <p>Estamos abrindo turmas de implantação com condição especial de lançamento e acompanhamento próximo da nossa equipe. Quem entra agora ajuda a moldar o produto.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Tenho%20interesse%20no%20lan%C3%A7amento%20do%20Mage%20Lite." target="_blank" rel="noopener">Garantir minha vaga</a>
+    </div>
+  </div>
+</section>
+
+<!-- MAGE ERP -->
+<section id="erp">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Mage ERP · Operação completa</p>
+        <h2 style="font-size:clamp(30px,3.8vw,44px);font-weight:800;margin-bottom:14px">Retaguarda e frente de caixa em um só fluxo.</h2>
+        <p style="color:var(--muted);font-size:16.5px">Vendeu, saiu do estoque, entrou no financeiro e a nota já foi autorizada. O Mage ERP integra toda a operação e ainda emite em contingência quando a internet cai — <b style="color:var(--text)">suas vendas não param</b>.</p>
+        <ul class="checklist">
+          <li>Frente de caixa ágil e intuitivo</li>
+          <li>Baixa de estoque em tempo real</li>
+          <li>TEF integrado: cartão e Pix</li>
+          <li>Importação de NF-e da Sefaz</li>
+          <li>Promoções, combos e crediário</li>
+          <li>Trocas, devoluções e grade</li>
+        </ul>
+        <div class="fiscal-badges">
+          <span class="badge">NF-e</span>
+          <span class="badge">NFC-e</span>
+          <span class="badge">NFS-e</span>
+          <span class="badge">TEF</span>
+          <span class="badge">Contingência automática</span>
+        </div>
+      </div>
+      <div>
+        <div class="frame">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="img-slot" style="min-height:280px">
+            <img loading="lazy" src="img/erp-retaguarda.png" alt="Tela da retaguarda do Mage ERP" onerror="this.remove()">
+            <div class="hint"><b>Print do Mage ERP</b>Salve a retaguarda como <code>img/erp-retaguarda.png</code></div>
+          </div>
+        </div>
+        <p class="shot-caption" style="margin-bottom:18px">Gestor Retaguarda</p>
+        <div class="frame">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="img-slot" style="min-height:200px">
+            <img loading="lazy" src="img/erp-pdv.png" alt="Tela do PDV do Mage ERP" onerror="this.remove()">
+            <div class="hint"><b>Print do PDV</b>Salve como <code>img/erp-pdv.png</code></div>
+          </div>
+        </div>
+        <p class="shot-caption">Gestor PDV</p>
+      </div>
+    </div>
+
+    <div class="tef-band">
+      <h3>TEF Dedicado e <span>SmartPOS</span></h3>
+      <p>Transações automáticas via cartão, Pix e carteiras digitais, com tecnologia de ponta integrada ao fluxo do seu caixa. Transações homologadas nas principais adquirentes e plataformas de TEF do mercado:</p>
+      <div class="logo-marquee" aria-label="Adquirentes e plataformas homologadas: Stone, Cielo, Vero, Fiserv, PagBank, SuperTEF, PayGo, Getcard, Getnet, Rede, Mercado Pago, PicPay, Caixa, Sicredi, SafraPay, Sipag, Clover, Bin, iFood Pago e RedeFlex">
+        <div class="logo-track"><div class="p-logo"><img loading="lazy" src="img/parceiro-stone.png" alt="Logotipo Stone" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Stone</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-cielo.png" alt="Logotipo Cielo" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Cielo</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-vero.png" alt="Logotipo Vero" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Vero</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-fiserv.png" alt="Logotipo Fiserv" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Fiserv</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-pagbank.png" alt="Logotipo PagBank" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PagBank</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-supertef.png" alt="Logotipo SuperTEF" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>SuperTEF</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-paygo.png" alt="Logotipo PayGo" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PayGo</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-getcard.png" alt="Logotipo Getcard" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Getcard</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-getnet.png" alt="Logotipo Getnet" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Getnet</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-rede.png" alt="Logotipo Rede" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Rede</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-stone.png" alt="Logotipo Stone" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Stone</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-cielo.png" alt="Logotipo Cielo" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Cielo</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-vero.png" alt="Logotipo Vero" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Vero</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-fiserv.png" alt="Logotipo Fiserv" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Fiserv</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-pagbank.png" alt="Logotipo PagBank" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PagBank</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-supertef.png" alt="Logotipo SuperTEF" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>SuperTEF</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-paygo.png" alt="Logotipo PayGo" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PayGo</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-getcard.png" alt="Logotipo Getcard" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Getcard</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-getnet.png" alt="Logotipo Getnet" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Getnet</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-rede.png" alt="Logotipo Rede" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Rede</span></div></div>
+        <div class="logo-track reverse"><div class="p-logo"><img loading="lazy" src="img/parceiro-mercadopago.png" alt="Logotipo Mercado Pago" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Mercado Pago</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-picpay.png" alt="Logotipo PicPay" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PicPay</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-caixa.png" alt="Logotipo Caixa" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Caixa</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-sicredi.png" alt="Logotipo Sicredi" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Sicredi</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-safrapay.png" alt="Logotipo SafraPay" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>SafraPay</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-sipag.png" alt="Logotipo Sipag" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Sipag</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-clover.png" alt="Logotipo Clover" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Clover</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-bin.png" alt="Logotipo Bin" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Bin</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-ifoodpago.png" alt="Logotipo iFood Pago" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>iFood Pago</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-redeflex.png" alt="Logotipo RedeFlex" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>RedeFlex</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-mercadopago.png" alt="Logotipo Mercado Pago" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Mercado Pago</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-picpay.png" alt="Logotipo PicPay" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>PicPay</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-caixa.png" alt="Logotipo Caixa" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Caixa</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-sicredi.png" alt="Logotipo Sicredi" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Sicredi</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-safrapay.png" alt="Logotipo SafraPay" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>SafraPay</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-sipag.png" alt="Logotipo Sipag" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Sipag</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-clover.png" alt="Logotipo Clover" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Clover</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-bin.png" alt="Logotipo Bin" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>Bin</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-ifoodpago.png" alt="Logotipo iFood Pago" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>iFood Pago</span></div><div class="p-logo"><img loading="lazy" src="img/parceiro-redeflex.png" alt="Logotipo RedeFlex" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><span>RedeFlex</span></div></div>
+      </div>
+    </div>
+    <div class="module-grid">
+      <div class="module"><h4><span>01</span>Gestor Retaguarda</h4><p>Estoque, compras, financeiro e fiscal centralizados para decisões seguras em empresas do Simples, Lucro Presumido e Lucro Real.</p></div>
+      <div class="module"><h4><span>02</span>Gestor PDV</h4><p>Venda rápida no balcão, com emissão offline, autorização automática e suporte a impressoras e balanças.</p></div>
+      <div class="module"><h4><span>03</span>BI e Relatórios</h4><p>Lucro diário, giro de estoque e desempenho por setor, direto no seu celular, de onde você estiver.</p></div>
+      <div class="module"><h4><span>04</span>Força de Vendas</h4><p>Sua equipe externa tirando pedidos pelo smartphone, sincronizados na hora com o ERP.</p></div>
+      <div class="module"><h4><span>05</span>Autoatendimento</h4><p>Totem com cardápio digital e pagamento integrado para reduzir filas e aumentar o ticket médio.</p></div>
+      <div class="module"><h4><span>06</span>Autorização remota</h4><p>Cancelamentos de venda ou item no PDV notificam o gestor no celular, que autoriza na hora, sem ir até o caixa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section id="segmentos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Expertise por setor</p>
+      <h2>Nossos segmentos.</h2>
+      <p>Cada negócio tem rotina, exigência fiscal e ritmo próprios. Nossos sistemas já chegam configurados para o seu — <b>entendemos como sua operação funciona</b>.</p>
+    </div>
+    <p class="swipe-hint">Deslize para o lado e conheça os 9 segmentos</p>
+    <div class="seg-grid">
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-supermercado.jpg" alt="Supermercado" onerror="this.remove()"><div class="hint"><code>img/seg-supermercado.jpg</code></div></div>
+        <div class="body"><h3>Supermercados</h3><p>Caixa rápido, giro de produto, promoções, combos, crediário e multiloja.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-padaria.jpg" alt="Padaria" onerror="this.remove()"><div class="hint"><code>img/seg-padaria.jpg</code></div></div>
+        <div class="body"><h3>Padarias</h3><p>Produção com receitas, controle de perdas e balanças integradas.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-restaurante.jpg" alt="Bares e restaurantes" onerror="this.remove()"><div class="hint"><code>img/seg-restaurante.jpg</code></div></div>
+        <div class="body"><h3>Bares e restaurantes</h3><p>Mesas, comandas, delivery e cozinha com fiscal em tempo real.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-construcao.jpg" alt="Material de construção" onerror="this.remove()"><div class="hint"><code>img/seg-construcao.jpg</code></div></div>
+        <div class="body"><h3>Material de construção</h3><p>Orçamentos por metragem, volumes pesados e reposição inteligente.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-autopecas.jpg" alt="Autopeças e oficinas" onerror="this.remove()"><div class="hint"><code>img/seg-autopecas.jpg</code></div></div>
+        <div class="body"><h3>Autopeças e oficinas</h3><p>Ordens de serviço, veículos, estoque de peças e comissão por técnico.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-farmacia.jpg" alt="Farmácias" onerror="this.remove()"><div class="hint"><code>img/seg-farmacia.jpg</code></div></div>
+        <div class="body"><h3>Farmácias</h3><p>Lote e validade, preços ABCFarma, PBMs, convênios e conformidade fiscal.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-posto.jpg" alt="Postos de combustível" onerror="this.remove()"><div class="hint"><code>img/seg-posto.jpg</code></div></div>
+        <div class="body"><h3>Postos de combustível</h3><p>Bombas, frentistas, LMC e integração com concentradores.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-varejo.jpg" alt="Varejo e confecções" onerror="this.remove()"><div class="hint"><code>img/seg-varejo.jpg</code></div></div>
+        <div class="body"><h3>Varejo e confecções</h3><p>Grade de cores e tamanhos, crediário e emissão fiscal completa.</p></div>
+      </div>
+      <div class="seg">
+        <div class="img-slot"><img loading="lazy" src="img/seg-assistencia.jpg" alt="Assistência técnica" onerror="this.remove()"><div class="hint"><code>img/seg-assistencia.jpg</code></div></div>
+        <div class="body"><h3>Assistência técnica</h3><p>Agendamentos, OS com seriais, rateio por técnico e NFS-e integrada.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINHA WEB -->
+<section id="web">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Linha Mage Web · 100% online</p>
+      <h2>Gestão no navegador, de onde você estiver.</h2>
+      <p>Sem instalação, sem servidor na loja, sem dor de cabeça com backup. Você assina, acessa e gerencia — <b>do computador, do tablet ou do celular</b>.</p>
+    </div>
+    <div class="web-grid">
+      <article class="web-card">
+        <h3>Mage<span>Web</span></h3>
+        <p>Gestão completa para comércio e serviços: vendas, estoque, financeiro e emissão de NF-e, NFC-e e NFS-e direto da nuvem.</p>
+        <span class="aud">Comércio e prestadores de serviço</span>
+      </article>
+      <article class="web-card">
+        <h3>Mage<span>Food</span></h3>
+        <p>Pedidos, comandas, cozinha e delivery integrados. O controle do salão e do balcão na palma da mão.</p>
+        <span class="aud">Bares, restaurantes e delivery</span>
+      </article>
+      <article class="web-card">
+        <h3>Mage<span>Shop</span></h3>
+        <p>Sua loja virtual pronta para vender, integrada ao estoque e ao financeiro. Venda online sem retrabalho.</p>
+        <span class="aud">Quem quer vender pela internet</span>
+      </article>
+      <article class="web-card">
+        <h3>Mage<span>Pet</span></h3>
+        <p>Clientes, serviços, banho e tosa e produtos em um só painel, com agenda organizada.</p>
+        <span class="aud">Pet shops e clínicas veterinárias</span>
+      </article>
+      <article class="web-card">
+        <h3>Mage<span>Agro</span></h3>
+        <p>Gestão pensada para o produtor rural: controle de produção, insumos e emissão fiscal do campo.</p>
+        <span class="aud">Produtores rurais e agronegócio</span>
+      </article>
+      <article class="web-card">
+        <h3>E o seu segmento?</h3>
+        <p>A linha Mage Web cresce sempre: clínicas, salões de beleza, estética e mais. Fale com a gente e descubra a versão ideal.</p>
+        <span class="aud">Consulte disponibilidade</span>
+      </article>
+    </div>
+    <div class="web-shot">
+      <div class="frame">
+        <div class="bar"><span></span><span></span><span></span></div>
+        <div class="img-slot" style="min-height:300px">
+          <img loading="lazy" src="img/web-painel.png" alt="Painel de um sistema da linha Mage Web" onerror="this.remove()">
+          <div class="hint"><b>Print de um painel da linha web</b>Salve como <code>img/web-painel.png</code></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section id="comparar">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Qual é o seu momento?</p>
+      <h2>Compare as soluções.</h2>
+      <p>Três caminhos, um mesmo padrão Mage de suporte e emissão fiscal. Veja lado a lado e escolha — <b>e se crescer, você migra de linha sem recomeçar do zero</b>.</p>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-lite">Mage Lite<small>Comece a vender hoje</small></th>
+            <th>Mage ERP<small>Operação completa</small></th>
+            <th>Linha Web<small>100% online</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Vendas e frente de caixa</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Emissão de NFC-e e NF-e</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Controle de estoque</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Financeiro (a pagar e receber)</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Leve, roda em qualquer máquina</td><td class="col-lite yes">✓</td><td class="no">—</td><td class="no">—</td></tr>
+          <tr><td>TEF integrado (cartão e Pix)</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
+          <tr><td>Funciona sem internet</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
+          <tr><td>Acesso pelo navegador, de qualquer lugar</td><td class="col-lite no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>BI e relatórios no celular</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Força de vendas</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
+          <tr><td>Autoatendimento (totem)</td><td class="col-lite no">—</td><td class="yes">✓</td><td class="no">—</td></tr>
+          <tr><td>Multiloja</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Em dúvida? Na demonstração gratuita a gente indica o caminho certo para o seu momento — sem empurrar o que você não precisa.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Central de ajuda</p>
+      <h2>Dúvidas frequentes.</h2>
+      <p>Tudo o que você precisa saber sobre como a <b>Mage</b> pode organizar sua operação.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Qual a diferença entre o Mage Lite, o Mage ERP e a linha Mage Web?</summary>
+        <p>O Mage Lite é o nosso sistema mais novo, desenvolvido pela própria Mage: leve e direto, ideal para quem quer começar a vender com nota fiscal rápido. O Mage ERP é a solução completa, com retaguarda, PDV com TEF, BI e módulos avançados para operações maiores. A linha Mage Web reúne sistemas 100% online por assinatura, acessados pelo navegador. Na demonstração, indicamos o caminho certo para o seu momento.</p>
+      </details>
+      <details>
+        <summary>O PDV funciona sem internet?</summary>
+        <p>Sim. O Mage ERP emite o cupom fiscal em contingência quando a conexão cai e autoriza automaticamente com a Secretaria da Fazenda assim que a internet volta. Suas vendas não param.</p>
+      </details>
+      <details>
+        <summary>Os sistemas atendem quais regimes tributários?</summary>
+        <p>Atendemos empresas do Simples Nacional, Lucro Presumido e Lucro Real, com emissão de NF-e, NFC-e e NFS-e conforme a legislação de todos os 5.570 municípios do Brasil.</p>
+      </details>
+      <details>
+        <summary>Funciona com balanças, impressoras e máquinas de cartão?</summary>
+        <p>Sim. Trabalhamos com as principais impressoras fiscais e balanças do mercado, e o TEF integrado processa cartão e Pix direto no fluxo do caixa, com as principais adquirentes.</p>
+      </details>
+      <details>
+        <summary>Consigo acompanhar minha empresa à distância?</summary>
+        <p>Consegue. Com o BI você acompanha lucro diário, vendas e estoque pelo celular, e os sistemas da linha Mage Web podem ser acessados de qualquer lugar pelo navegador.</p>
+      </details>
+      <details>
+        <summary>Como funciona o suporte?</summary>
+        <p>Aqui você fala direto com um especialista, sem menu eletrônico. Basta chamar no WhatsApp ou ligar para (61) 99413-8978.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- REVENDA -->
+<section id="revenda">
+  <div class="wrap rev-grid">
+    <div>
+      <p class="eyebrow">Parceria premium</p>
+      <h2 style="font-size:clamp(28px,3.6vw,42px);font-weight:800;margin-bottom:14px">Seja nosso revendedor.</h2>
+      <p style="color:var(--muted);font-size:16.5px;margin-bottom:8px">Se você trabalha com informática, automação ou atendimento a comércios na sua região, temos um modelo de parceria para você construir <b style="color:var(--text)">renda recorrente</b> com um portfólio completo: Lite, ERP e web.</p>
+      <div style="margin-top:26px">
+        <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20ser%20revendedor%20dos%20sistemas%20Mage." target="_blank" rel="noopener">Quero ser um revendedor</a>
+      </div>
+    </div>
+    <div class="rev-cards">
+      <div class="rev-card"><b>Baixo investimento</b><span>Comece pequeno e escale com a carteira.</span></div>
+      <div class="rev-card"><b>Retorno rápido</b><span>Comissionamento diferenciado e recorrente.</span></div>
+      <div class="rev-card"><b>Treinamento completo</b><span>Capacitação técnica e comercial da equipe.</span></div>
+      <div class="rev-card"><b>Suporte contínuo</b><span>Acompanhamento próximo em toda a jornada.</span></div>
+      <div class="rev-card"><b>Apoio em marketing</b><span>Material e orientação para divulgar na sua região.</span></div>
+      <div class="rev-card"><b>Portfólio completo</b><span>Três linhas de produto para oferecer.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Comece sua evolução</p>
+      <h2>Pronto para modernizar sua gestão?</h2>
+      <p>Agende uma demonstração gratuita e sem compromisso. Você mostra como sua operação funciona, e a gente mostra qual sistema Mage resolve — na prática, na sua tela.</p>
+      <div class="contact-direct">
+        <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+5561994138978">Ligar: (61) 99413-8978</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/magesistemas" target="_blank" rel="noopener" aria-label="Instagram @magesistemas">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1zm0 2c-3.1 0-3.5 0-4.7.1-1.1.1-1.5.2-1.8.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.7-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.5.3 1.8.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.7.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.5-.2 1.8-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.7.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.5-.3-1.8-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.7-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.4a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2zm0 8.4a3.3 3.3 0 1 0 0-6.6 3.3 3.3 0 0 0 0 6.6zm5.3-9.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/magesistemas" target="_blank" rel="noopener" aria-label="Facebook /magesistemas">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="https://wa.me/5561994138978" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4L9.5 8c-.1-.3-.3-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <form class="form-card" id="waForm">
+      <h3>Fale com um especialista</h3>
+      <p class="sub">Preencha e a conversa já abre no WhatsApp com suas informações.</p>
+      <div class="field">
+        <label for="fNome">Seu nome</label>
+        <input id="fNome" type="text" placeholder="Como podemos te chamar?" required>
+      </div>
+      <div class="field">
+        <label for="fEmpresa">Empresa ou cidade</label>
+        <input id="fEmpresa" type="text" placeholder="Nome da empresa e cidade">
+      </div>
+      <div class="field">
+        <label for="fInteresse">Tenho interesse em</label>
+        <select id="fInteresse">
+          <option>Mage Lite</option>
+          <option>Mage ERP</option>
+          <option>Linha Mage Web</option>
+          <option>Ser revendedor</option>
+          <option>Ainda não sei, quero orientação</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fMsg">Conte um pouco do seu negócio</label>
+        <textarea id="fMsg" placeholder="Segmento, quantidade de caixas, principal desafio hoje..."></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+      <p class="form-note">Seus dados vão direto para nossa conversa no WhatsApp. Nada fica salvo no site.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#" style="margin-bottom:14px"><img class="logomark" src="img/logo.png" alt="" style="width:44px" onerror="this.nextElementSibling.style.display='grid';this.remove()"><span class="mark" style="display:none">M</span>Mage<em>Sistemas</em></a>
+        <p style="max-width:36ch">Transformando a complexidade da gestão empresarial em simplicidade operacional para o comércio brasileiro.</p>
+      </div>
+      <div>
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="#lite">Mage Lite</a></li>
+          <li><a href="#erp">Mage ERP</a></li>
+          <li><a href="#web">Linha Mage Web</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+          <li><a href="#revenda">Seja revendedor</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="https://wa.me/5561994138978" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+5561994138978">(61) 99413-8978</a></li>
+          <li><a href="https://www.instagram.com/magesistemas" target="_blank" rel="noopener">Instagram @magesistemas</a></li>
+          <li><a href="https://www.facebook.com/magesistemas" target="_blank" rel="noopener">Facebook /magesistemas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mage Sistemas · CNPJ 23.127.266/0001-03 · Todos os direitos reservados.</span>
+      <span>Desenvolvido pela Mage Sistemas.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Mage%20Sistemas." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp: (61) 99413-8978">
+  <span class="pulse" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.2.2-.4.1-.2 0-.3 0-.4L9.5 8c-.1-.3-.3-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+document.getElementById('waForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var nome = document.getElementById('fNome').value.trim();
+  var empresa = document.getElementById('fEmpresa').value.trim();
+  var interesse = document.getElementById('fInteresse').value;
+  var msg = document.getElementById('fMsg').value.trim();
+  var texto = 'Olá! Meu nome é ' + nome + '.';
+  if(empresa){ texto += ' Sou de ' + empresa + '.'; }
+  texto += ' Tenho interesse em: ' + interesse + '.';
+  if(msg){ texto += ' Sobre meu negócio: ' + msg; }
+  window.open('https://wa.me/5561994138978?text=' + encodeURIComponent(texto), '_blank');
+});
+
+
+// Menu mobile: abre/fecha, trava a rolagem e fecha ao tocar em um link
+(function(){
+  var btn = document.getElementById('menuBtn'), nav = document.getElementById('navLinks');
+  if(!btn || !nav) return;
+  function fechar(){
+    nav.classList.remove('open'); document.body.classList.remove('menu-aberto');
+    btn.textContent = '☰'; btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Abrir menu');
+  }
+  btn.addEventListener('click', function(){
+    var abre = !nav.classList.contains('open');
+    if(abre){
+      nav.classList.add('open'); document.body.classList.add('menu-aberto');
+      btn.textContent = '✕'; btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Fechar menu');
+    } else { fechar(); }
+  });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', fechar); });
+  addEventListener('keydown', function(e){ if(e.key === 'Escape') fechar(); });
+})();
+
+// Contadores animados nas estatísticas
+(function(){
+  var els = document.querySelectorAll('[data-count]');
+  if(!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var fmt = function(el, v){
+    var f = el.dataset.format, suf = el.dataset.suffix || '';
+    if(f === 'mi'){ return v >= 1000000 ? '+1 milhão' : '+' + Math.round(v/1000) + ' mil'; }
+    if(f === 'pt'){ return v.toLocaleString('pt-BR'); }
+    return v + suf;
+  };
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      io.unobserve(e.target);
+      var el = e.target, alvo = +el.dataset.count, t0 = null;
+      function passo(t){
+        if(!t0) t0 = t;
+        var p = Math.min((t - t0) / 1400, 1);
+        p = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(el, Math.round(alvo * p));
+        if(p < 1) requestAnimationFrame(passo);
+      }
+      requestAnimationFrame(passo);
+    });
+  }, {threshold:.6});
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+// Menu acende conforme a seção visível (scrollspy)
+(function(){
+  var links = document.querySelectorAll('.nav-links a[href^="#"]');
+  var mapa = {};
+  links.forEach(function(a){
+    var sec = document.querySelector(a.getAttribute('href'));
+    if(sec) mapa[sec.id] = a;
+  });
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting && mapa[e.target.id]){
+        links.forEach(function(a){ a.classList.remove('active'); });
+        mapa[e.target.id].classList.add('active');
+      }
+    });
+  }, {rootMargin:'-35% 0px -55% 0px'});
+  Object.keys(mapa).forEach(function(id){ io.observe(document.getElementById(id)); });
+})();
+
+// Brilho neon que acompanha o mouse no hero
+(function(){
+  var hero = document.querySelector('.hero'), glow = document.querySelector('.mouse-glow');
+  if(!hero || !glow || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  hero.addEventListener('mousemove', function(ev){
+    var r = hero.getBoundingClientRect();
+    glow.style.left = (ev.clientX - r.left) + 'px';
+    glow.style.top  = (ev.clientY - r.top) + 'px';
+  });
+})();
+
+// Sombra no cabeçalho ao rolar
+(function(){
+  var h = document.querySelector('header');
+  addEventListener('scroll', function(){ h.classList.toggle('scrolled', scrollY > 12); }, {passive:true});
+})();
+</script>
+<script src="webchat.js" defer></script>
+
+</body>
+</html>
