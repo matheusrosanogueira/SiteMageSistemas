@@ -45,17 +45,14 @@ Tipografia: Bricolage Grotesque (títulos) + Inter (texto), via Google Fonts.
 
 ### Deploy automático via Git (opcional)
 
-O cPanel tem **Git™ Version Control**: cadastre este repositório lá (Clone URL), defina o deploy para `public_html` com um `.cpanel.yml`, e cada `git push` + "Pull or Deploy" atualiza o site. Exemplo de `.cpanel.yml`:
+O cPanel tem **Git™ Version Control**, e este repositório já traz o `.cpanel.yml` pronto:
 
-```yaml
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/USUARIO_CPANEL/public_html
-    - /bin/cp -R index.html webchat.js img $DEPLOYPATH
-```
+1. cPanel → **Git™ Version Control** → **Create**;
+2. Clone URL: `https://github.com/matheusrosanogueira/SiteMageSistemas.git` (repositório privado exige chave SSH/token — ver abaixo);
+3. Repository Path: `repositories/site-magesistemas` (nunca `public_html` — o clone fica à parte e o deploy copia para lá);
+4. Após criar: **Manage** → aba **Pull or Deploy** → **Update from Remote** → **Deploy HEAD Commit**.
 
-(Substituir `USUARIO_CPANEL` pelo usuário real da hospedagem.)
+A cada atualização enviada ao GitHub, basta repetir o passo 4. O deploy copia `index.html`, `webchat.js` e `img/` para `public_html`, sem apagar nada que já exista lá (pastas `gestor20`, `arquivos`, `update` e os logos `parceiro-*.png` baixados no servidor ficam intactos).
 
 ## Produtos apresentados
 

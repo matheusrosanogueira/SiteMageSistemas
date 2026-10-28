@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    # Pasta de destino: a raiz pública do site (usa o $HOME do usuário do cPanel)
+    - export DEPLOYPATH=$HOME/public_html
+    # Copia só o que é do site. Não apaga nada que já exista lá
+    # (gestor20, arquivos, update e os logos de parceiros ficam intactos).
+    - /bin/cp index.html $DEPLOYPATH/
+    - /bin/cp webchat.js $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/img
+    - /bin/cp -R img/. $DEPLOYPATH/img/
