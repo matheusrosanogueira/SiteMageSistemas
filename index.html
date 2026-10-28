@@ -130,6 +130,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(18,14,32,.85);backdrop-f
 .hero p.lead{font-size:18px;color:var(--muted);max-width:52ch}
 .hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
 .hero-chips span{border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:500;color:var(--text)}
+.hero-chips .chip-rt{border:1px solid rgba(53,201,139,.5);background:rgba(53,201,139,.1);color:#7FE4B8;border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;text-decoration:none}
+.hero-chips .chip-rt:hover{background:rgba(53,201,139,.18)}
 .hero-ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
 .hero-note{margin-top:22px;font-size:14px;color:var(--muted)}
 .hero-shot{animation:rise .7s ease both}
@@ -527,11 +529,12 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"Qual a diferença entre o Mage Lite, o Mage ERP e a linha Mage Web?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite é o sistema mais novo, desenvolvido pela própria Mage: leve e direto, ideal para começar a vender com nota fiscal rápido. O Mage ERP é a solução completa, com retaguarda, PDV com TEF, BI e módulos avançados. A linha Mage Web reúne sistemas 100% online por assinatura, acessados pelo navegador."}},
-        {"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite tem planos a partir de R$ 79,99 por mês. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas — na demonstração gratuita você recebe a proposta exata, sem compromisso."}},
+        {"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"O Mage Lite tem planos a partir de R$ 79,99 por mês, já com a emissão de NFC-e e NF-e inclusa. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas — na demonstração gratuita você recebe a proposta exata, sem compromisso."}},
         {"@type":"Question","name":"O PDV funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mage ERP emite o cupom fiscal em contingência quando a conexão cai e autoriza automaticamente com a Secretaria da Fazenda quando a internet volta."}},
         {"@type":"Question","name":"Os sistemas atendem quais regimes tributários?","acceptedAnswer":{"@type":"Answer","text":"Simples Nacional, Lucro Presumido e Lucro Real, com emissão de NF-e, NFC-e e NFS-e conforme a legislação de todos os 5.570 municípios do Brasil."}},
         {"@type":"Question","name":"Funciona com balanças, impressoras e máquinas de cartão?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com as principais impressoras fiscais e balanças do mercado, e o TEF integrado processa cartão e Pix direto no fluxo do caixa."}},
         {"@type":"Question","name":"O sistema está preparado para a Reforma Tributária (IBS e CBS)?","acceptedAnswer":{"@type":"Answer","text":"Sim. Acompanhamos as Notas Técnicas do Portal Nacional da NF-e — incluindo a NT 2025.002 (grupos de IBS, CBS e Imposto Seletivo), o CST/cClassTrib por produto e o novo DANFE da Reforma — com atualização a cada nova versão. Para o Simples Nacional, o destaque nas notas começa em janeiro de 2027; para o regime normal, a obrigação já vale."}},
+        {"@type":"Question","name":"Por que assinatura mensal em vez de comprar o sistema de uma vez?","acceptedAnswer":{"@type":"Answer","text":"A legislação fiscal muda o tempo todo — só em 2026 foram várias versões de Notas Técnicas da Reforma Tributária. Na assinatura Mage, atualizações fiscais, suporte com especialista e evolução do sistema estão inclusos: você paga pelo sistema sempre funcionando."}},
         {"@type":"Question","name":"Como funciona o suporte?","acceptedAnswer":{"@type":"Answer","text":"Atendimento direto com um especialista, sem menu eletrônico, pelo WhatsApp ou telefone (61) 99413-8978."}}
       ]
     }
@@ -559,7 +562,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
         <li class="only-mobile"><a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20dos%20sistemas%20Mage." target="_blank" rel="noopener">Solicitar demonstração</a></li>
       </ul>
     </nav>
-    <a class="btn btn-primary" href="#contato">Solicitar demonstração</a>
+    <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20dos%20sistemas%20Mage." target="_blank" rel="noopener">Solicitar demonstração</a>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
@@ -579,12 +582,13 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
         <span>Emissão fiscal</span>
         <span>Controle de estoque</span>
         <span>Financeiro</span>
+        <a class="chip-rt" href="#reforma">✓ Pronto para a Reforma Tributária</a>
       </div>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20Mage%20Lite." target="_blank" rel="noopener">Quero conhecer o Mage Lite</a>
         <a class="btn btn-outline" href="#ecossistema">Ver todas as soluções</a>
       </div>
-      <p class="hero-note">Mage Lite a partir de <b style="color:var(--text)">R$ 79,99/mês</b> · Suporte direto com especialista — (61) 99413-8978</p>
+      <p class="hero-note">Mage Lite a partir de <b style="color:var(--text)">R$ 79,99/mês com nota fiscal inclusa</b> · Suporte direto — (61) 99413-8978</p>
     </div>
     <div class="hero-shot">
       <img class="hero-emblem" src="img/logo.png" alt="Logomarca Mage Sistemas" onerror="this.remove()">
@@ -628,7 +632,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
           <li>Roda liso até em computadores modestos</li>
           <li>Evolui rápido com o pedido dos clientes</li>
         </ul>
-        <p class="preco-tag"><span>A partir de</span><em>R$ 79,99/mês</em></p>
+        <p class="preco-tag"><span>Nota fiscal inclusa · a partir de</span><em>R$ 79,99/mês</em></p>
         <a class="more" href="#lite">Conhecer o Mage Lite</a>
       </article>
       <article class="eco-card">
@@ -713,7 +717,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
       <div>
         <h3>Seja um dos primeiros a usar o Mage Lite</h3>
         <p>Estamos abrindo turmas de implantação com condição especial de lançamento e acompanhamento próximo da nossa equipe. Quem entra agora ajuda a moldar o produto.</p>
-        <p class="preco-tag" style="margin-top:16px"><span>Planos a partir de</span><em>R$ 79,99/mês</em></p>
+        <p class="preco-tag" style="margin-top:16px"><span>Nota fiscal inclusa · planos a partir de</span><em>R$ 79,99/mês</em></p>
       </div>
       <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Tenho%20interesse%20no%20lan%C3%A7amento%20do%20Mage%20Lite." target="_blank" rel="noopener">Garantir minha vaga</a>
     </div>
@@ -916,7 +920,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
           <tr><td>Força de vendas</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
           <tr><td>Autoatendimento (totem)</td><td class="col-lite no">—</td><td class="yes">✓</td><td class="no">—</td></tr>
           <tr><td>Multiloja</td><td class="col-lite yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-          <tr><td>Investimento mensal</td><td class="col-lite" style="font-weight:800;color:#FF8FCB">a partir de R$ 79,99</td><td class="no">sob consulta</td><td class="no">sob consulta</td></tr>
+          <tr><td>Investimento mensal</td><td class="col-lite" style="font-weight:800;color:#FF8FCB">a partir de R$ 79,99<br><small style="font-weight:500;color:var(--muted)">com fiscal incluso</small></td><td class="no">sob consulta</td><td class="no">sob consulta</td></tr>
         </tbody>
       </table>
     </div>
@@ -979,7 +983,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
       </details>
       <details>
         <summary>Quanto custa?</summary>
-        <p>O Mage Lite tem planos a partir de R$ 79,99 por mês. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas — na demonstração gratuita você recebe a proposta exata para a sua operação, sem compromisso.</p>
+        <p>O Mage Lite tem planos a partir de R$ 79,99 por mês — <b>já com a emissão de NFC-e e NF-e inclusa</b>, sem "plano fiscal" cobrado à parte como em outros sistemas. O Mage ERP e a linha Mage Web variam conforme os módulos e o número de caixas: na demonstração gratuita você recebe a proposta exata, sem compromisso. E sim, o preço está aqui no site — aqui você não precisa "solicitar orçamento" para descobrir quanto custa.</p>
       </details>
       <details>
         <summary>O PDV funciona sem internet?</summary>
@@ -1000,6 +1004,10 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
       <details>
         <summary>O sistema está preparado para a Reforma Tributária (IBS e CBS)?</summary>
         <p>Sim. Acompanhamos as Notas Técnicas do Portal Nacional da NF-e — incluindo a NT 2025.002 (grupos de IBS, CBS e Imposto Seletivo), o CST/cClassTrib por produto e o novo DANFE da Reforma — e atualizamos o sistema a cada nova versão. Para empresas do Simples Nacional, o destaque nas notas começa em janeiro de 2027; para o regime normal, a obrigação de informar já vale e o sistema está em dia.</p>
+      </details>
+      <details>
+        <summary>Por que assinatura mensal em vez de comprar o sistema de uma vez?</summary>
+        <p>Porque sistema fiscal parado é sistema vencido. A legislação muda o tempo todo — só em 2026 foram várias versões de Notas Técnicas da Reforma Tributária — e um software comprado "de uma vez", sem atualização, para de emitir nota válida mais cedo ou mais tarde. Na assinatura Mage, as atualizações fiscais, o suporte com especialista e a evolução do sistema estão inclusos: você paga pelo sistema sempre funcionando, não por um CD que envelhece.</p>
       </details>
       <details>
         <summary>Como funciona o suporte?</summary>
