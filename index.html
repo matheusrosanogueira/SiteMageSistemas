@@ -339,6 +339,22 @@ html{scrollbar-color:#5B44D6 var(--bg)}
 
 header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,7,24,.94)}
 
+
+/* sobre a mage */
+#sobre .pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+#sobre .pilar{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+#sobre .pilar b{display:block;font-size:16px;margin-bottom:6px}
+#sobre .pilar span{font-size:14px;color:var(--muted)}
+#sobre .dados{margin-top:26px;font-size:14px;color:var(--muted)}
+
+/* faixa reforma tributária */
+#reforma{padding:0 0 96px}
+.reforma-band{background:linear-gradient(120deg,rgba(124,92,255,.22),rgba(226,58,157,.16));border:1px solid var(--line-2);border-radius:20px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.reforma-band h3{font-size:clamp(22px,2.6vw,28px);margin-bottom:8px}
+.reforma-band h3 span{background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.reforma-band p{color:var(--muted);max-width:58ch}
+@media (max-width:640px){#sobre .pilares{grid-template-columns:1fr}.reforma-band{padding:28px}}
+
 /* responsive */
 @media (max-width:960px){
   .hero-grid,.split,.rev-grid,.contact-grid,.lite-hero{grid-template-columns:1fr;gap:44px}
@@ -456,8 +472,8 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
   <div class="wrap hero-grid">
     <div>
       <span class="kicker"><span class="dot"></span>Novo: Mage Lite, o ERP desenvolvido pela Mage</span>
-      <h1>Tecnologia para você assumir o <span class="grad">controle total</span> do seu negócio.</h1>
-      <p class="lead">Conheça o Mage Lite: vendas, estoque, financeiro e emissão fiscal em um sistema leve, rápido e direto ao ponto — criado pela nossa própria equipe para o comércio brasileiro.</p>
+      <h1>Gestão completa para o seu comércio. Com um caixa que <span class="grad">nunca para</span>.</h1>
+      <p class="lead">PDV, estoque, financeiro e nota fiscal no Mage Lite, o ERP criado pela nossa equipe. Leve, direto ao ponto — e com contingência fiscal: a venda sai até sem internet, e a nota é autorizada sozinha quando a conexão volta.</p>
       <div class="hero-chips">
         <span>Frente de caixa</span>
         <span>Emissão fiscal</span>
@@ -476,7 +492,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
         <div class="bar"><span></span><span></span><span></span></div>
         <div class="img-slot">
           <img src="img/hero-magelite.png" alt="Tela principal do sistema Mage Lite" onerror="this.remove()">
-          <div class="hint"><b>Print do Mage Lite</b>Salve a tela principal do sistema como <code>img/hero-magelite.png</code></div>
+          <div class="hint">Imagem ilustrativa</div>
         </div>
       </div>
     </div>
@@ -564,7 +580,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <div class="bar"><span></span><span></span><span></span></div>
           <div class="img-slot" style="min-height:320px">
             <img loading="lazy" src="img/lite-pdv.png" alt="Tela de vendas do Mage Lite" onerror="this.remove()">
-            <div class="hint"><b>Print da tela de vendas</b>Salve como <code>img/lite-pdv.png</code></div>
+            <div class="hint">Imagem ilustrativa</div>
           </div>
         </div>
         <p class="shot-caption">Tela de vendas do Mage Lite</p>
@@ -576,7 +592,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <div class="bar"><span></span><span></span><span></span></div>
           <div class="img-slot">
             <img loading="lazy" src="img/lite-relatorios.png" alt="Relatórios do Mage Lite" onerror="this.remove()">
-            <div class="hint"><b>Print de relatórios / financeiro</b>Salve como <code>img/lite-relatorios.png</code></div>
+            <div class="hint">Imagem ilustrativa</div>
           </div>
         </div>
         <p class="shot-caption">Financeiro e relatórios em tempo real</p>
@@ -586,7 +602,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <div class="bar"><span></span><span></span><span></span></div>
           <div class="img-slot">
             <img src="img/hero-magelite.png" alt="Tela principal do Mage Lite" onerror="this.remove()">
-            <div class="hint"><b>Print da tela principal</b>Reaproveita o arquivo <code>img/hero-magelite.png</code></div>
+            <div class="hint">Imagem ilustrativa</div>
           </div>
         </div>
         <p class="shot-caption">Tudo em uma única tela principal</p>
@@ -631,7 +647,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <div class="bar"><span></span><span></span><span></span></div>
           <div class="img-slot" style="min-height:280px">
             <img loading="lazy" src="img/erp-retaguarda.png" alt="Tela da retaguarda do Mage ERP" onerror="this.remove()">
-            <div class="hint"><b>Print do Mage ERP</b>Salve a retaguarda como <code>img/erp-retaguarda.png</code></div>
+            <div class="hint">Imagem ilustrativa</div>
           </div>
         </div>
         <p class="shot-caption" style="margin-bottom:18px">Gestor Retaguarda</p>
@@ -639,7 +655,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
           <div class="bar"><span></span><span></span><span></span></div>
           <div class="img-slot" style="min-height:200px">
             <img loading="lazy" src="img/erp-pdv.png" alt="Tela do PDV do Mage ERP" onerror="this.remove()">
-            <div class="hint"><b>Print do PDV</b>Salve como <code>img/erp-pdv.png</code></div>
+            <div class="hint">Imagem ilustrativa</div>
           </div>
         </div>
         <p class="shot-caption">Gestor PDV</p>
@@ -676,39 +692,39 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
     <p class="swipe-hint">Deslize para o lado e conheça os 9 segmentos</p>
     <div class="seg-grid">
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-supermercado.jpg" alt="Supermercado" onerror="this.remove()"><div class="hint"><code>img/seg-supermercado.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-supermercado.jpg" alt="Supermercado" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Supermercados</h3><p>Caixa rápido, giro de produto, promoções, combos, crediário e multiloja.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-padaria.jpg" alt="Padaria" onerror="this.remove()"><div class="hint"><code>img/seg-padaria.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-padaria.jpg" alt="Padaria" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Padarias</h3><p>Produção com receitas, controle de perdas e balanças integradas.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-restaurante.jpg" alt="Bares e restaurantes" onerror="this.remove()"><div class="hint"><code>img/seg-restaurante.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-restaurante.jpg" alt="Bares e restaurantes" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Bares e restaurantes</h3><p>Mesas, comandas, delivery e cozinha com fiscal em tempo real.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-construcao.jpg" alt="Material de construção" onerror="this.remove()"><div class="hint"><code>img/seg-construcao.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-construcao.jpg" alt="Material de construção" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Material de construção</h3><p>Orçamentos por metragem, volumes pesados e reposição inteligente.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-autopecas.jpg" alt="Autopeças e oficinas" onerror="this.remove()"><div class="hint"><code>img/seg-autopecas.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-autopecas.jpg" alt="Autopeças e oficinas" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Autopeças e oficinas</h3><p>Ordens de serviço, veículos, estoque de peças e comissão por técnico.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-farmacia.jpg" alt="Farmácias" onerror="this.remove()"><div class="hint"><code>img/seg-farmacia.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-farmacia.jpg" alt="Farmácias" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Farmácias</h3><p>Lote e validade, preços ABCFarma, PBMs, convênios e conformidade fiscal.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-posto.jpg" alt="Postos de combustível" onerror="this.remove()"><div class="hint"><code>img/seg-posto.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-posto.jpg" alt="Postos de combustível" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Postos de combustível</h3><p>Bombas, frentistas, LMC e integração com concentradores.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-varejo.jpg" alt="Varejo e confecções" onerror="this.remove()"><div class="hint"><code>img/seg-varejo.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-varejo.jpg" alt="Varejo e confecções" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Varejo e confecções</h3><p>Grade de cores e tamanhos, crediário e emissão fiscal completa.</p></div>
       </div>
       <div class="seg">
-        <div class="img-slot"><img loading="lazy" src="img/seg-assistencia.jpg" alt="Assistência técnica" onerror="this.remove()"><div class="hint"><code>img/seg-assistencia.jpg</code></div></div>
+        <div class="img-slot"><img loading="lazy" src="img/seg-assistencia.jpg" alt="Assistência técnica" onerror="this.remove()"><div class="hint">Imagem ilustrativa</div></div>
         <div class="body"><h3>Assistência técnica</h3><p>Agendamentos, OS com seriais, rateio por técnico e NFS-e integrada.</p></div>
       </div>
     </div>
@@ -760,7 +776,7 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
         <div class="bar"><span></span><span></span><span></span></div>
         <div class="img-slot" style="min-height:300px">
           <img loading="lazy" src="img/web-painel.png" alt="Painel de um sistema da linha Mage Web" onerror="this.remove()">
-          <div class="hint"><b>Print de um painel da linha web</b>Salve como <code>img/web-painel.png</code></div>
+          <div class="hint">Imagem ilustrativa</div>
         </div>
       </div>
     </div>
@@ -802,6 +818,19 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       </table>
     </div>
     <p class="compare-note">Em dúvida? Na demonstração gratuita a gente indica o caminho certo para o seu momento — sem empurrar o que você não precisa.</p>
+  </div>
+</section>
+
+<!-- REFORMA TRIBUTÁRIA -->
+<section id="reforma">
+  <div class="wrap">
+    <div class="reforma-band">
+      <div>
+        <h3>A <span>Reforma Tributária</span> começa a valer em 2026.</h3>
+        <p>CBS e IBS entram em cena e o documento fiscal muda. Quem emite com a Mage atravessa a transição tranquilo: nossos sistemas acompanham as atualizações da legislação, e nosso suporte te explica, em bom português, o que muda no seu caixa.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20entender%20o%20impacto%20da%20Reforma%20Tribut%C3%A1ria%20no%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Entender o impacto no meu negócio</a>
+    </div>
   </div>
 </section>
 
@@ -861,6 +890,23 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       <div class="rev-card"><b>Apoio em marketing</b><span>Material e orientação para divulgar na sua região.</span></div>
       <div class="rev-card"><b>Portfólio completo</b><span>Três linhas de produto para oferecer.</span></div>
     </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Quem está por trás</p>
+      <h2>Sobre a Mage Sistemas.</h2>
+      <p>Somos uma empresa brasileira de automação comercial e fiscal. Nascemos no balcão: foram anos implantando e dando suporte a sistemas de gestão em centenas de comércios — e foi essa vivência que nos levou a criar o <b>Mage Lite</b>, nosso ERP próprio. Hoje atendemos estabelecimentos em todo o Brasil com uma promessa simples: sistema que funciona e gente de verdade do outro lado quando você precisa.</p>
+    </div>
+    <div class="pilares">
+      <div class="pilar"><b>Suporte humano direto</b><span>Você fala com especialista no WhatsApp ou telefone — sem menu eletrônico, sem fila de robô.</span></div>
+      <div class="pilar"><b>Desenvolvimento próprio</b><span>O Mage Lite é feito pela nossa equipe e evolui rápido com o pedido de quem usa todos os dias.</span></div>
+      <div class="pilar"><b>Ecossistema completo</b><span>Desktop e web, do balcão à nuvem: você cresce de linha sem recomeçar do zero.</span></div>
+    </div>
+    <p class="dados">Mage Sistemas · CNPJ 23.127.266/0001-03 · (61) 99413-8978 · atendimento em todo o Brasil</p>
   </div>
 </section>
 
@@ -938,10 +984,12 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
       <div>
         <h4>Institucional</h4>
         <ul>
+          <li><a href="#sobre">Sobre a Mage</a></li>
           <li><a href="#segmentos">Segmentos</a></li>
           <li><a href="#faq">Dúvidas frequentes</a></li>
           <li><a href="#revenda">Seja revendedor</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
         </ul>
       </div>
       <div>

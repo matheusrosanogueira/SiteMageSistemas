@@ -7,5 +7,6 @@ deployment:
     # (gestor20, arquivos, update e os logos de parceiros ficam intactos).
     - /bin/cp index.html $DEPLOYPATH/
     - /bin/cp webchat.js $DEPLOYPATH/
+    - /bin/cp privacidade.html $DEPLOYPATH/
     - /bin/mkdir -p $DEPLOYPATH/img
     - /bin/cp -R img/. $DEPLOYPATH/img/

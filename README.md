@@ -9,6 +9,7 @@ Site institucional da **Mage Sistemas** (automação comercial e fiscal), constr
 ```
 index.html          O site inteiro (HTML + CSS + JS em um único arquivo)
 webchat.js          Widget de webchat da plataforma Mage (api.magesistemas.com)
+privacidade.html    Política de privacidade (LGPD)
 baixar-logos.php    Script de setup: baixa os logos dos parceiros e se apaga sozinho
 img/
   logo.png          Logomarca (esfera) — também é o favicon
@@ -16,8 +17,8 @@ img/
   seg-*.jpg         Ilustrações neon dos 9 segmentos
   parceiro-*.png    Logos das adquirentes/TEF (gerados pelo baixar-logos.php)
   hero-magelite.png, lite-*.png, erp-*.png, web-painel.png
-                    Prints dos sistemas (slots opcionais — o site mostra
-                    instruções enquanto o arquivo não existe)
+                    Telas ilustrativas dos sistemas (substituir pelos
+                    prints reais quando disponíveis — mesmo nome de arquivo)
 ```
 
 A lista completa de nomes de imagem esperados está comentada no topo do `index.html`. Qualquer imagem salva com o nome certo em `img/` aparece no site automaticamente, sem mexer em código.
@@ -52,7 +53,7 @@ O cPanel tem **Git™ Version Control**, e este repositório já traz o `.cpanel
 3. Repository Path: `repositories/site-magesistemas` (nunca `public_html` — o clone fica à parte e o deploy copia para lá);
 4. Após criar: **Manage** → aba **Pull or Deploy** → **Update from Remote** → **Deploy HEAD Commit**.
 
-A cada atualização enviada ao GitHub, basta repetir o passo 4. O deploy copia `index.html`, `webchat.js` e `img/` para `public_html`, sem apagar nada que já exista lá (pastas `gestor20`, `arquivos`, `update` e os logos `parceiro-*.png` baixados no servidor ficam intactos).
+A cada atualização enviada ao GitHub, basta repetir o passo 4. O deploy copia `index.html`, `privacidade.html`, `webchat.js` e `img/` para `public_html`, sem apagar nada que já exista lá (pastas `gestor20`, `arquivos`, `update` e os logos `parceiro-*.png` baixados no servidor ficam intactos).
 
 ## Produtos apresentados
 
