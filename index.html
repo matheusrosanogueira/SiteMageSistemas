@@ -347,13 +347,28 @@ header.scrolled{box-shadow:0 10px 34px -14px rgba(0,0,0,.55);background:rgba(10,
 #sobre .pilar span{font-size:14px;color:var(--muted)}
 #sobre .dados{margin-top:26px;font-size:14px;color:var(--muted)}
 
-/* faixa reforma tributária */
-#reforma{padding:0 0 96px}
-.reforma-band{background:linear-gradient(120deg,rgba(124,92,255,.22),rgba(226,58,157,.16));border:1px solid var(--line-2);border-radius:20px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
-.reforma-band h3{font-size:clamp(22px,2.6vw,28px);margin-bottom:8px}
-.reforma-band h3 span{background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
-.reforma-band p{color:var(--muted);max-width:58ch}
-@media (max-width:640px){#sobre .pilares{grid-template-columns:1fr}.reforma-band{padding:28px}}
+/* seção reforma tributária */
+#reforma{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-image:linear-gradient(90deg,transparent,rgba(124,92,255,.5),rgba(255,95,168,.5),transparent) 1}
+.rt-line{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;margin-bottom:56px}
+.rt-line::before{content:"";position:absolute;top:30px;left:4%;right:4%;height:2px;background:linear-gradient(90deg,#7C5CFF,#C05CE0,#FF5FA8,rgba(255,95,168,.2));border-radius:2px}
+.rt-step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;margin-top:18px}
+.rt-step::before{content:"";position:absolute;top:-24px;left:24px;width:14px;height:14px;border-radius:50%;background:var(--bg-2);border:3px solid var(--gold)}
+.rt-step .ano{font-family:var(--display);font-weight:800;font-size:22px;background:linear-gradient(100deg,#A78BFF,#FF5FA8);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:6px}
+.rt-step b{display:block;font-size:14.5px;margin-bottom:5px}
+.rt-step p{font-size:13.5px;color:var(--muted)}
+.nt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.nt-item{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:18px 20px;display:flex;gap:13px;align-items:flex-start}
+.nt-item .ok{color:var(--ok);font-weight:800;flex:none;margin-top:1px}
+.nt-item b{display:block;font-size:14px}
+.nt-item b code{font-family:var(--body);font-size:12px;font-weight:700;color:#FF8FCB;background:rgba(226,58,157,.12);border:1px solid rgba(226,58,157,.35);border-radius:999px;padding:2px 10px;margin-left:6px;white-space:nowrap}
+.nt-item span{font-size:13px;color:var(--muted)}
+.rt-callout{margin-top:40px;background:linear-gradient(120deg,rgba(124,92,255,.22),rgba(226,58,157,.16));border:1px solid var(--line-2);border-radius:20px;padding:36px 40px;display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.rt-callout h3{font-size:clamp(20px,2.4vw,26px);margin-bottom:8px}
+.rt-callout p{color:var(--muted);max-width:60ch;font-size:15px}
+.rt-callout p b{color:var(--text)}
+.rt-note{margin-top:16px;font-size:12.5px;color:var(--muted)}
+@media (max-width:960px){.rt-line{grid-template-columns:1fr 1fr}.rt-line::before{display:none}.rt-step{margin-top:0}.rt-step::before{display:none}.nt-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){#sobre .pilares{grid-template-columns:1fr}.rt-line,.nt-grid{grid-template-columns:1fr}.rt-callout{padding:28px}}
 
 
 /* etiqueta de preço */
@@ -516,6 +531,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
         {"@type":"Question","name":"O PDV funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. O Mage ERP emite o cupom fiscal em contingência quando a conexão cai e autoriza automaticamente com a Secretaria da Fazenda quando a internet volta."}},
         {"@type":"Question","name":"Os sistemas atendem quais regimes tributários?","acceptedAnswer":{"@type":"Answer","text":"Simples Nacional, Lucro Presumido e Lucro Real, com emissão de NF-e, NFC-e e NFS-e conforme a legislação de todos os 5.570 municípios do Brasil."}},
         {"@type":"Question","name":"Funciona com balanças, impressoras e máquinas de cartão?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com as principais impressoras fiscais e balanças do mercado, e o TEF integrado processa cartão e Pix direto no fluxo do caixa."}},
+        {"@type":"Question","name":"O sistema está preparado para a Reforma Tributária (IBS e CBS)?","acceptedAnswer":{"@type":"Answer","text":"Sim. Acompanhamos as Notas Técnicas do Portal Nacional da NF-e — incluindo a NT 2025.002 (grupos de IBS, CBS e Imposto Seletivo), o CST/cClassTrib por produto e o novo DANFE da Reforma — com atualização a cada nova versão. Para o Simples Nacional, o destaque nas notas começa em janeiro de 2027; para o regime normal, a obrigação já vale."}},
         {"@type":"Question","name":"Como funciona o suporte?","acceptedAnswer":{"@type":"Answer","text":"Atendimento direto com um especialista, sem menu eletrônico, pelo WhatsApp ou telefone (61) 99413-8978."}}
       ]
     }
@@ -537,6 +553,7 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
         <li><a href="#web">Linha Web</a></li>
         <li><a href="#segmentos">Segmentos</a></li>
         <li><a href="#comparar">Comparar</a></li>
+        <li><a href="#reforma">Reforma Tributária</a></li>
         <li><a href="#faq">Dúvidas</a></li>
         <li><a href="#revenda">Revenda</a></li>
         <li class="only-mobile"><a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20dos%20sistemas%20Mage." target="_blank" rel="noopener">Solicitar demonstração</a></li>
@@ -910,13 +927,40 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
 <!-- REFORMA TRIBUTÁRIA -->
 <section id="reforma">
   <div class="wrap">
-    <div class="reforma-band">
-      <div>
-        <h3>A <span>Reforma Tributária</span> começa a valer em 2026.</h3>
-        <p>CBS e IBS entram em cena e o documento fiscal muda. Quem emite com a Mage atravessa a transição tranquilo: nossos sistemas acompanham as atualizações da legislação, e nosso suporte te explica, em bom português, o que muda no seu caixa.</p>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20entender%20o%20impacto%20da%20Reforma%20Tribut%C3%A1ria%20no%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Entender o impacto no meu negócio</a>
+    <div class="section-head">
+      <p class="eyebrow">Reforma Tributária · IBS, CBS e Imposto Seletivo</p>
+      <h2>A maior mudança fiscal do Brasil já começou. Seu sistema precisa acompanhar.</h2>
+      <p>A transição vai até 2033 e muda o documento fiscal que sai do seu caixa. Com a Mage, cada etapa chega <b>pronta no seu sistema, por atualização</b> — você vende, a gente cuida da legislação.</p>
     </div>
+
+    <div class="rt-line">
+      <div class="rt-step"><span class="ano">2026</span><b>Ano-teste do IBS e da CBS</b><p>Alíquotas de teste (CBS 0,9% + IBS 0,1%) com destaque nas notas. Regime normal já informa desde agosto; recolhimento dispensado para quem cumpre as obrigações acessórias.</p></div>
+      <div class="rt-step"><span class="ano">2027</span><b>CBS plena e Imposto Seletivo</b><p>Fim de PIS e COFINS. Simples Nacional passa a informar IBS/CBS nos documentos desde janeiro. Créditos passam a depender dos eventos fiscais corretos.</p></div>
+      <div class="rt-step"><span class="ano">2029–2032</span><b>Transição do ICMS e do ISS</b><p>Alíquotas de ICMS/ISS caem gradualmente a cada ano, enquanto o IBS sobe na mesma proporção. Dois mundos convivendo na mesma nota.</p></div>
+      <div class="rt-step"><span class="ano">2033</span><b>Novo sistema completo</b><p>IBS e CBS integrais; ICMS e ISS deixam de existir. Quem atravessou a transição com o sistema certo nem sentiu.</p></div>
+    </div>
+
+    <div class="section-head" style="margin-bottom:0">
+      <h2 style="font-size:clamp(22px,2.8vw,30px)">Notas Técnicas que nossos sistemas acompanham</h2>
+      <p>Emissão alinhada às publicações do Portal Nacional da NF-e — atualizada a cada nova versão, sem custo adicional:</p>
+    </div>
+    <div class="nt-grid">
+      <div class="nt-item"><span class="ok">✓</span><div><b>Grupos IBS/CBS/IS na NF-e e NFC-e<code>NT 2025.002</code></b><span>Novo leiaute da Reforma (grupo UB, totais por fora e novas finalidades de nota de crédito e débito).</span></div></div>
+      <div class="nt-item"><span class="ok">✓</span><div><b>CST e cClassTrib por produto<code>Informe RT 2025.002</code></b><span>Classificação tributária da Reforma no cadastro de produtos, acompanhando a tabela oficial.</span></div></div>
+      <div class="nt-item"><span class="ok">✓</span><div><b>QR-Code versão 3 da NFC-e<code>NT 2025.001</code></b><span>Novo padrão de QR-Code com assinatura embutida, exigido pelas SEFAZ desde 2025.</span></div></div>
+      <div class="nt-item"><span class="ok">✓</span><div><b>Novo DANFE da Reforma<code>NT 2026.010</code></b><span>Impressão da NF-e e da NFC-e com os campos de IBS, CBS e IS (produção em dezembro/2026).</span></div></div>
+      <div class="nt-item"><span class="ok">✓</span><div><b>Cálculo "por fora" nos totais</b><span>IBS, CBS e IS somam ao valor do documento — motor de cálculo e totalizadores já no novo modelo.</span></div></div>
+      <div class="nt-item"><span class="ok">✓</span><div><b>NFS-e padrão nacional</b><span>Prestadores do Simples emitem no padrão nacional desde novembro/2026 — integrado na linha Mage.</span></div></div>
+    </div>
+
+    <div class="rt-callout">
+      <div>
+        <h3>E o que isso significa para o seu negócio?</h3>
+        <p>Se você é do <b>Simples Nacional</b> (a maioria dos nossos clientes), o destaque de IBS/CBS nas suas notas começa em <b>janeiro de 2027</b> — e o seu sistema Mage estará pronto antes disso, por atualização automática. Se você é do regime normal, a obrigação já vale: a gente te deixa em dia hoje.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/5561994138978?text=Ol%C3%A1!%20Quero%20entender%20o%20impacto%20da%20Reforma%20Tribut%C3%A1ria%20no%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Falar com um especialista fiscal</a>
+    </div>
+    <p class="rt-note">Datas e regras conforme LC 214/2025, Ato Conjunto RFB/CGIBS nº 4/2026 e Notas Técnicas do Portal Nacional da NF-e vigentes em outubro/2026 — sujeitas a atualização pelos órgãos oficiais.</p>
   </div>
 </section>
 
@@ -952,6 +996,10 @@ body::after{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opac
       <details>
         <summary>Consigo acompanhar minha empresa à distância?</summary>
         <p>Consegue. Com o BI você acompanha lucro diário, vendas e estoque pelo celular, e os sistemas da linha Mage Web podem ser acessados de qualquer lugar pelo navegador.</p>
+      </details>
+      <details>
+        <summary>O sistema está preparado para a Reforma Tributária (IBS e CBS)?</summary>
+        <p>Sim. Acompanhamos as Notas Técnicas do Portal Nacional da NF-e — incluindo a NT 2025.002 (grupos de IBS, CBS e Imposto Seletivo), o CST/cClassTrib por produto e o novo DANFE da Reforma — e atualizamos o sistema a cada nova versão. Para empresas do Simples Nacional, o destaque nas notas começa em janeiro de 2027; para o regime normal, a obrigação de informar já vale e o sistema está em dia.</p>
       </details>
       <details>
         <summary>Como funciona o suporte?</summary>
@@ -1229,7 +1277,7 @@ document.getElementById('waForm').addEventListener('submit', function(e){
 
   // Revelação ao rolar com escalonamento entre irmãos
   if(!rm && 'IntersectionObserver' in window){
-    var alvos = document.querySelectorAll('.section-head, .eco-card, .module, .web-card, .rev-card, .pilar, .faq details, .lite-cta, .reforma-band, .compare-wrap, .tef-band, .form-card');
+    var alvos = document.querySelectorAll('.section-head, .eco-card, .module, .web-card, .rev-card, .pilar, .faq details, .lite-cta, .rt-step, .nt-item, .rt-callout, .compare-wrap, .tef-band, .form-card');
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if(!e.isIntersecting) return;
