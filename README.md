@@ -13,6 +13,9 @@ privacidade.html    Política de privacidade (LGPD)
 sistema-para-*.html Nove páginas de segmento (SEO + conversão)
 sitemap.xml         Mapa do site para o Google
 robots.txt          Diretivas de indexação
+m.php               Coletor de métricas próprio (sem cookies, sem IP)
+painel.php          Painel de métricas (senha definida no 1º acesso)
+stats/              Registros de visitas (bloqueada ao público)
 baixar-logos.php    Script de setup: baixa os logos dos parceiros e se apaga sozinho
 img/
   logo.png          Logomarca (esfera) — também é o favicon

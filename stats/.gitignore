@@ -1,0 +1,5 @@
+# Registros de visitas e segredos ficam só no servidor
+visitas-*.jsonl
+senha.txt
+sal.txt
+index.html

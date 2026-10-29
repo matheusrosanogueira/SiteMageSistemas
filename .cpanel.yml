@@ -10,5 +10,8 @@ deployment:
     - /bin/cp privacidade.html $DEPLOYPATH/
     - /bin/cp sistema-para-*.html $DEPLOYPATH/
     - /bin/cp sitemap.xml robots.txt $DEPLOYPATH/
+    - /bin/cp m.php painel.php $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/stats
+    - /bin/cp stats/.htaccess $DEPLOYPATH/stats/.htaccess
     - /bin/mkdir -p $DEPLOYPATH/img
     - /bin/cp -R img/. $DEPLOYPATH/img/

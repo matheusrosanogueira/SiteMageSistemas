@@ -1328,5 +1328,28 @@ document.getElementById('waForm').addEventListener('submit', function(e){
 </script>
 <script src="webchat.js" defer></script>
 
+<script>
+(function(){
+  try{
+    var ua = navigator.userAgent || '';
+    if(/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(ua)) return;
+    function enviar(ev){
+      var dados = JSON.stringify({p:location.pathname, r:document.referrer || '', e:ev || ''});
+      if(navigator.sendBeacon){ navigator.sendBeacon('m.php', dados); }
+      else{ fetch('m.php', {method:'POST', body:dados, keepalive:true}).catch(function(){}); }
+    }
+    enviar('');
+    document.addEventListener('click', function(ev){
+      var a = ev.target.closest && ev.target.closest('a,button');
+      if(!a) return;
+      var h = a.href || '';
+      if(h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) enviar('whatsapp');
+      else if(h.indexOf('central.magesistemas') > -1) enviar('area-cliente');
+      else if(h.indexOf('tel:') === 0) enviar('ligacao');
+      else if(a.id === 'channel-chat-button' || (a.closest && a.closest('#channel-chat-button'))) enviar('webchat');
+    }, true);
+  }catch(e){}
+})();
+</script>
 </body>
 </html>

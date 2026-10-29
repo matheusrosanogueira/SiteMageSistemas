@@ -56,6 +56,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-size:13px;color:var(
       <li><b>Formulário de contato:</b> o que você preenche (nome, empresa/cidade, interesse e mensagem) não fica salvo no site — o conteúdo é enviado diretamente para a nossa conversa no WhatsApp, iniciada por você.</li>
       <li><b>Chat do site (webchat):</b> ao usar o chat, o seu nome e as mensagens são transmitidos à nossa plataforma de atendimento, exclusivamente para responder à sua solicitação.</li>
       <li><b>Registros técnicos do servidor:</b> como qualquer hospedagem, o servidor pode registrar dados técnicos de acesso (endereço IP, data e hora) para fins de segurança e estabilidade.</li>
+      <li><b>Medição de audiência própria:</b> contamos visitas e cliques de forma agregada, no nosso próprio servidor, <b>sem cookies</b> e sem repassar dados a serviços de publicidade. O endereço IP não é armazenado — usamos apenas um código anônimo que muda todos os dias e não permite identificar você.</li>
     </ul>
 
     <h2>2. Para que usamos os dados</h2>
@@ -91,5 +92,28 @@ footer{border-top:1px solid var(--line);padding:26px 0;font-size:13px;color:var(
 <footer>
   <div class="wrap">© 2026 Mage Sistemas · Todos os direitos reservados · <a href="index.html">magesistemas.com.br</a></div>
 </footer>
+<script>
+(function(){
+  try{
+    var ua = navigator.userAgent || '';
+    if(/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(ua)) return;
+    function enviar(ev){
+      var dados = JSON.stringify({p:location.pathname, r:document.referrer || '', e:ev || ''});
+      if(navigator.sendBeacon){ navigator.sendBeacon('m.php', dados); }
+      else{ fetch('m.php', {method:'POST', body:dados, keepalive:true}).catch(function(){}); }
+    }
+    enviar('');
+    document.addEventListener('click', function(ev){
+      var a = ev.target.closest && ev.target.closest('a,button');
+      if(!a) return;
+      var h = a.href || '';
+      if(h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) enviar('whatsapp');
+      else if(h.indexOf('central.magesistemas') > -1) enviar('area-cliente');
+      else if(h.indexOf('tel:') === 0) enviar('ligacao');
+      else if(a.id === 'channel-chat-button' || (a.closest && a.closest('#channel-chat-button'))) enviar('webchat');
+    }, true);
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
